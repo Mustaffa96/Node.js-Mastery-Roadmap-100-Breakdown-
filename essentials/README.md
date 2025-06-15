@@ -12,8 +12,7 @@ var nasi = "lemak"; // Can change later
 
 **let:** Modern, like your new smartphone. Scoped to block (inside {}), can change value but no redeclare.
 
-```
-javascript
+```javascript
 
 let teh = "tarik"; // Change value OK, but no repeat 'let teh'
 ```
@@ -21,8 +20,7 @@ let teh = "tarik"; // Change value OK, but no repeat 'let teh'
 **const:** Like your grandma’s secret rendang recipe, cannot change after setting. Also block-scoped.
 
 
-```
-javascript
+```javascript
 
 const kampung = "best"; // Fixed, cannot change
 ```
@@ -53,16 +51,14 @@ JavaScript got different kinds of stuff you can store, like items in your pasar 
 
 **object:** Like a basket holding many things—key-value pairs. Can be arrays, functions, or custom objects.
 
-```
-javascript
+```javascript
 
 let stall = { food: "roti canai", price: 2 };
 ```
 
 Check type with typeof, like asking “this what lah?”
 
-```
-javascript
+```javascript
 
 typeof "nasi" // "string"
 typeof 42 // "number"
@@ -73,8 +69,7 @@ typeof 42 // "number"
 Functions are like your makcik cooking curry—give her ingredients, she gives you food. In JavaScript, functions do work when you call them.
 
 Declare a function:
-```
-javascript
+```javascript
 
 function cookNasi(type) {
   return `Nasi ${type} siap, bro!`;
@@ -84,8 +79,7 @@ cookNasi("lemak"); // "Nasi lemak siap, bro!"
 
 Function Expression:
 
-```
-javascript
+```javascript
 
 const makan = function() {
   return "Jom makan!";
@@ -98,8 +92,7 @@ Parameters are what you give the function (like type above). return is what it g
 
 Default Parameters (ES6+):
 
-```
-javascript
+```javascript
 
 function order(food = "nasi") {
   return `You get ${food}.`;
@@ -111,8 +104,7 @@ order(); // "You get nasi."
 
 Closure is like your makcik’s secret sambal recipe—she keeps it inside her kitchen even after you leave. In JavaScript, a function remembers variables from its outer scope even after that scope is gone.
 
-```
-javascript
+```javascript
 
 function makeSambal() {
   let secret = "extra chili";
@@ -134,8 +126,7 @@ Every object has a prototype` linked to it. You can “borrow” stuff from it.
 
 Example:
 
-```
-javascript
+```javascript
 
 let food = { tasty: true };
 // food prototype is Object.prototype
@@ -143,8 +134,7 @@ console.log(food.toString()); // Inherited from Object.prototype
 ```
 
 Custom Prototype:
-```
-javascript
+```javascript
 
 function Stall(name) {
   this.name = name;
@@ -158,8 +148,7 @@ myStall.sell(); // "Ali sells roti!"
 
 Modern way? Use class (ES6+), but it’s just fancy syntax for prototypes:
 
-```
-javascript
+```javascript
 
 class Stall {
   constructor(name) {
@@ -176,8 +165,7 @@ class Stall {
 this is like pointing to “who’s doing the action” in your kampung story. Its value depends on how a function is called:
 
 Global context: this is window (in browsers) or undefined (in strict mode).
-```
-javascript
+```javascript
 
 console.log(this); // window (in browser, non-strict)
 ```
@@ -185,8 +173,7 @@ console.log(this); // window (in browser, non-strict)
 Object method:
 
  this is the object calling the method.
- ```
-javascript
+ ```javascript
 
 let stall = {
   name: "Makcik",
@@ -200,8 +187,7 @@ stall.sell(); // "Makcik sells food!"
 Constructor:
 
  this is the new object being made.
-```
-javascript
+```javascript
 
 function Stall(name) {
   this.name = name;
@@ -210,8 +196,7 @@ function Stall(name) {
 ```
 
 Gotcha: In callbacks or loose functions, this can get confusing. Use bind(), call(), or arrow functions to control it:
-```
-javascript
+```javascript
 
 let stall = {
   name: "Ali",
@@ -227,8 +212,7 @@ stall.sell(); // "Ali" (arrow function keeps 'this' as stall)
 JavaScript is single-threaded, but it can handle waiting tasks like waiting for your mee goreng without stopping the whole stall). Promises and async/await make this smooth.
 
 Promises: Like promising to deliver food. It’s either pending, fulfilled (done), or rejected (failed).
-```
-javascript
+```javascript
 
 let cookPromise = new Promise((resolve, reject) => {
   setTimeout(() => resolve("Nasi siap!"), 1000);
@@ -243,8 +227,7 @@ cookPromise.then(food => console.log(food)).catch(err => console.log(err));
 
 Async/Await (ES6+): Cleaner way to handle Promises, like ordering food and waiting politely:
 
-```
-javascript
+```javascript
 
 async function cook() {
   try {
@@ -266,8 +249,7 @@ ES6 (2015) and later brought cool stuff to JavaScript, like upgrading your kampu
 Arrow Functions:
 
 Short syntax, no own this (uses parent’s this). Great for callbacks.
-```
-javascript
+```javascript
 
   let add = (a, b) => x + y; a + b;
   add(2, 3); // 5
@@ -279,8 +261,7 @@ javascript
 Destructuring:
 
 Unpack stuff like taking out snacks from a goodie bag.
-```
-javascript
+```javascript
 
   let stall = { name: "Makcik", food:" "roti"};
   let { name, food } = stall; // name = "Makcik", food = "roti"
@@ -290,8 +271,7 @@ javascript
 Modules:
 
 Split code into files, like separate stalls in a pasar. Export and import stuff.
-```
-javascript
+```javascript
 
 // File: food.js
 export const dish = "nasi lemak";
@@ -306,6 +286,7 @@ sell(); // "Come buy lah!"
 ```
 
 Other ES6+ goodies: template literals (hello ${name}), spread/rest (...), let/const, and classes (mentioned earlier).
+
 Kampung Summary
 JavaScript is like running a kampung stall, lah:
 Variables (let, const) store your stock.
