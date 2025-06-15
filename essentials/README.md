@@ -28,46 +28,83 @@ const kampung = "best"; // Fixed, cannot change
 Use let or const nowadays, lah. var is like using a typewriter—nobody does that anymore.
 
 # 2. Data Types: What’s in Your Container?
+
 JavaScript got different kinds of stuff you can store, like items in your pasar malam stall:
-Primitive Types (simple stuff):
-string: Words or text, like "nasi goreng" or 'ayam penyet'.
-number: Any number, like 42 or 3.14. No separate integer or float, all same lah.
-boolean: True or false, like “shop open meh?” (true) or “closed lah” (false).
-undefined: Variable declared but no value yet, like “eh, where my kuih go?”
-null: Empty on purpose, like “I got no plans, bro.”
-symbol: Unique ID thing, rare in kampung coding but good for fancy stuff.
-bigint: For super big numbers, like your angpow collection after 10 years.
-Non-Primitive (complex stuff):
-object: Like a basket holding many things—key-value pairs. Can be arrays, functions, or custom objects.
+
+## Primitive Types (simple stuff):
+
+**string**: Words or text, like "nasi goreng" or 'ayam penyet'.
+
+**number:** Any number, like 42 or 3.14. No separate integer or float, all same lah.
+
+**boolean:** True or false, like “shop open meh?” (true) or “closed lah” (false).
+
+**undefined:** Variable declared but no value yet, like “eh, where my kuih go?”
+
+**null**: Empty on purpose, like “I got no plans, bro.”
+
+**symbol:** Unique ID thing, rare in kampung coding but good for fancy stuff.
+
+**bigint:** For super big numbers, like your angpow collection after 10 years.
+
+## Non-Primitive (complex stuff):
+
+**object:** Like a basket holding many things—key-value pairs. Can be arrays, functions, or custom objects.
+
+```
 javascript
 let stall = { food: "roti canai", price: 2 };
+```
+
 Check type with typeof, like asking “this what lah?”
+
+```
 javascript
 typeof "nasi" // "string"
 typeof 42 // "number"
+```
+
 # 3. Functions: Your Kampung Chef
+
 Functions are like your makcik cooking curry—give her ingredients, she gives you food. In JavaScript, functions do work when you call them.
+
 Declare a function:
+```
 javascript
 function cookNasi(type) {
   return `Nasi ${type} siap, bro!`;
 }
 cookNasi("lemak"); // "Nasi lemak siap, bro!"
+```
+
 Function Expression:
+
+```
 javascript
 const makan = function() {
   return "Jom makan!";
 };
+```
+
 Parameters and Return:
+
 Parameters are what you give the function (like type above). return is what it gives back. No return? It’s like makcik forgetting to serve the plate—undefined lah.
+
 Default Parameters (ES6+):
+
+```
 javascript
 function order(food = "nasi") {
   return `You get ${food}.`;
 }
 order(); // "You get nasi."
+```
+
 # 4. Closures: Secret Recipe Keeper
+
 Closure is like your makcik’s secret sambal recipe—she keeps it inside her kitchen even after you leave. In JavaScript, a function remembers variables from its outer scope even after that scope is gone.
+
+```
 javascript
 function makeSambal() {
   let secret = "extra chili";
@@ -77,16 +114,27 @@ function makeSambal() {
 }
 let mySambal = makeSambal();
 mySambal(); // "Sambal with extra chili!"
+```
+
 Here, the inner function “closes over” secret, keeping it alive even after makeSambal finishes. Useful for private data or counters, lah.
+
 # 5. Prototypes: Family Tree of Objects
+
 Prototypes are like your kampung family tree—every object inherits traits from its “parent” (prototype). JavaScript uses this to share properties and methods.
+
 Every object has a prototype` linked to it. You can “borrow” stuff from it.
+
 Example:
+
+```
 javascript
 let food = { tasty: true };
 // food prototype is Object.prototype
 console.log(food.toString()); // Inherited from Object.prototype
+```
+
 Custom Prototype:
+```
 javascript
 function Stall(name) {
   this.name = name;
@@ -96,7 +144,11 @@ Stall.prototype.sell = function() {
 };
 let myStall = new Stall("Ali");
 myStall.sell(); // "Ali sells roti!"
+```
+
 Modern way? Use class (ES6+), but it’s just fancy syntax for prototypes:
+
+```
 javascript
 class Stall {
   constructor(name) {
@@ -106,6 +158,8 @@ class Stall {
     return `${this.name} sells roti!`;
   }
 }
+```
+
 # 6. this: Who’s Talking Lah?
 this is like pointing to “who’s doing the action” in your kampung story. Its value depends on how a function is called:
 Global context: this is window (in browsers) or undefined (in strict mode).
