@@ -7,7 +7,7 @@ Variables are like your kampung sundry shop’s containers—got place to keep y
 
 ```
 javascript
-
+---
 var nasi = "lemak"; // Can change later
 ```
 
