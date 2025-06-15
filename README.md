@@ -41,6 +41,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
 ## 25–40%: Building Real-World Applications
 
 **Goal:** Create functional, production-like applications with proper structure.
+
 * Key Knowledge:
  * Express middleware: authentication, logging, error handling, CORS.
  * Database integration: MongoDB (NoSQL) or PostgreSQL/MySQL (SQL) with ORMs like Mongoose or Sequelize.
