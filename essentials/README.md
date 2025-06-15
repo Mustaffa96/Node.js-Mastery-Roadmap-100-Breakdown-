@@ -287,14 +287,22 @@ sell(); // "Come buy lah!"
 
 Other ES6+ goodies: template literals (hello ${name}), spread/rest (...), let/const, and classes (mentioned earlier).
 
-Kampung Summary
+## Kampung Summary
+
 JavaScript is like running a kampung stall, lah:
+
 Variables (let, const) store your stock.
+
 Data types define what you sell (string, number, object).
+
 Functions cook your orders.
+
 Closures keep your recipes.
+
 Prototypes pass down family traits.
+
 this points to who’s running the show.
+
 Promises and async/await handle delivery orders.
+
 ES6+ features like arrow functions, destructuring, and modules make your stall stylo-milo.
-If you got blur parts, just holla, and I’ll clear it up kampung-style again, sia. Jom, code like a pro! 😎
