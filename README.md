@@ -1,8 +1,8 @@
 To "pro 100%" Node.js, you need a structured path to master its core concepts, ecosystem, and advanced techniques. Below, I’ll break down the required knowledge and milestones into a percentage-based roadmap, assuming "100%" represents professional-level expertise, capable of building scalable, production-ready applications and contributing to complex projects. Each milestone includes key topics, tools, and skills, with approximate percentages reflecting their importance and the effort required.
 
-## Node.js Mastery Roadmap (100% Breakdown)
+# Node.js Mastery Roadmap (100% Breakdown)
 
-# 0–10%: Foundations of JavaScript and Node.js Basics
+## 0–10%: Foundations of JavaScript and Node.js Basics
 
 **Goal:** Understand JavaScript deeply and get comfortable with Node.js fundamentals.
 
