@@ -1,17 +1,33 @@
 Oi, bro, let’s break down JavaScript essentials like we’re chilling in a kampung, sipping teh tarik under a big ol’ tree, lah. I’ll explain it simple-simple, like talking to my cousin who just started coding, but with that kampung vibe—relaxed, got some slang, and straight to the point, sia. Here we go!
-1. Variables: Storing Your Stuff
+
+# 1. Variables: Storing Your Stuff
 Variables are like your kampung sundry shop’s containers—got place to keep your stuff, lah. In JavaScript, you got three ways to declare them:
-var: Old-school, like your uncle’s bicycle. Can be redeclared and scoped to function or global. Bit messy, sia.
+
+**var:** Old-school, like your uncle’s bicycle. Can be redeclared and scoped to function or global. Bit messy, sia.
+
+```
 javascript
 var nasi = "lemak"; // Can change later
-let: Modern, like your new smartphone. Scoped to block (inside {}), can change value but no redeclare.
+```
+
+**let:** Modern, like your new smartphone. Scoped to block (inside {}), can change value but no redeclare.
+
+```
 javascript
 let teh = "tarik"; // Change value OK, but no repeat 'let teh'
-const: Like your grandma’s secret rendang recipe, cannot change after setting. Also block-scoped.
+```
+
+**const:** Like your grandma’s secret rendang recipe, cannot change after setting. Also block-scoped.
+
+
+```
 javascript
 const kampung = "best"; // Fixed, cannot change
+```
+
 Use let or const nowadays, lah. var is like using a typewriter—nobody does that anymore.
-2. Data Types: What’s in Your Container?
+
+# 2. Data Types: What’s in Your Container?
 JavaScript got different kinds of stuff you can store, like items in your pasar malam stall:
 Primitive Types (simple stuff):
 string: Words or text, like "nasi goreng" or 'ayam penyet'.
@@ -29,7 +45,7 @@ Check type with typeof, like asking “this what lah?”
 javascript
 typeof "nasi" // "string"
 typeof 42 // "number"
-3. Functions: Your Kampung Chef
+# 3. Functions: Your Kampung Chef
 Functions are like your makcik cooking curry—give her ingredients, she gives you food. In JavaScript, functions do work when you call them.
 Declare a function:
 javascript
@@ -50,7 +66,7 @@ function order(food = "nasi") {
   return `You get ${food}.`;
 }
 order(); // "You get nasi."
-4. Closures: Secret Recipe Keeper
+# 4. Closures: Secret Recipe Keeper
 Closure is like your makcik’s secret sambal recipe—she keeps it inside her kitchen even after you leave. In JavaScript, a function remembers variables from its outer scope even after that scope is gone.
 javascript
 function makeSambal() {
@@ -62,7 +78,7 @@ function makeSambal() {
 let mySambal = makeSambal();
 mySambal(); // "Sambal with extra chili!"
 Here, the inner function “closes over” secret, keeping it alive even after makeSambal finishes. Useful for private data or counters, lah.
-5. Prototypes: Family Tree of Objects
+# 5. Prototypes: Family Tree of Objects
 Prototypes are like your kampung family tree—every object inherits traits from its “parent” (prototype). JavaScript uses this to share properties and methods.
 Every object has a prototype` linked to it. You can “borrow” stuff from it.
 Example:
@@ -90,7 +106,7 @@ class Stall {
     return `${this.name} sells roti!`;
   }
 }
-6. this: Who’s Talking Lah?
+# 6. this: Who’s Talking Lah?
 this is like pointing to “who’s doing the action” in your kampung story. Its value depends on how a function is called:
 Global context: this is window (in browsers) or undefined (in strict mode).
 javascript
@@ -121,7 +137,7 @@ let stall = {
   }
 };
 stall.sell(); // "Ali" (arrow function keeps 'this' as stall)
-7. Async/Await and Promises: Waiting for Nasi
+# 7. Async/Await and Promises: Waiting for Nasi
 JavaScript is single-threaded, but it can handle waiting tasks like waiting for your mee goreng without stopping the whole stall). Promises and async/await make this smooth.
 Promises: Like promising to deliver food. It’s either pending, fulfilled (done), or rejected (failed).
 javascript
@@ -146,7 +162,7 @@ async function cook() {
 }
 cook();
 Use async/await for readable code, but it’s just Promises underneath, lah.
-8. ES6+ Features: Modern Kampung Coding
+# 8. ES6+ Features: Modern Kampung Coding
 ES6 (2015) and later brought cool stuff to JavaScript, like upgrading your kampung house with Wi-Fi and aircon.
 Arrow Functions:
 Short syntax, no own this (uses parent’s this). Great for callbacks.
