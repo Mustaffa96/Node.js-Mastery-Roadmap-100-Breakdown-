@@ -5,9 +5,8 @@ Variables are like your kampung sundry shop’s containers—got place to keep y
 
 **var:** Old-school, like your uncle’s bicycle. Can be redeclared and scoped to function or global. Bit messy, sia.
 
-```
-javascript
----
+```javascript
+
 var nasi = "lemak"; // Can change later
 ```
 
