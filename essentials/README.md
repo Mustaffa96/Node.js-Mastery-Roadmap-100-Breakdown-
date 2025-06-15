@@ -7,6 +7,7 @@ Variables are like your kampung sundry shop’s containers—got place to keep y
 
 ```
 javascript
+
 var nasi = "lemak"; // Can change later
 ```
 
@@ -14,6 +15,7 @@ var nasi = "lemak"; // Can change later
 
 ```
 javascript
+
 let teh = "tarik"; // Change value OK, but no repeat 'let teh'
 ```
 
@@ -22,6 +24,7 @@ let teh = "tarik"; // Change value OK, but no repeat 'let teh'
 
 ```
 javascript
+
 const kampung = "best"; // Fixed, cannot change
 ```
 
@@ -53,6 +56,7 @@ JavaScript got different kinds of stuff you can store, like items in your pasar 
 
 ```
 javascript
+
 let stall = { food: "roti canai", price: 2 };
 ```
 
@@ -60,6 +64,7 @@ Check type with typeof, like asking “this what lah?”
 
 ```
 javascript
+
 typeof "nasi" // "string"
 typeof 42 // "number"
 ```
@@ -71,6 +76,7 @@ Functions are like your makcik cooking curry—give her ingredients, she gives y
 Declare a function:
 ```
 javascript
+
 function cookNasi(type) {
   return `Nasi ${type} siap, bro!`;
 }
@@ -81,6 +87,7 @@ Function Expression:
 
 ```
 javascript
+
 const makan = function() {
   return "Jom makan!";
 };
@@ -94,6 +101,7 @@ Default Parameters (ES6+):
 
 ```
 javascript
+
 function order(food = "nasi") {
   return `You get ${food}.`;
 }
@@ -106,6 +114,7 @@ Closure is like your makcik’s secret sambal recipe—she keeps it inside her k
 
 ```
 javascript
+
 function makeSambal() {
   let secret = "extra chili";
   return function() {
@@ -128,6 +137,7 @@ Example:
 
 ```
 javascript
+
 let food = { tasty: true };
 // food prototype is Object.prototype
 console.log(food.toString()); // Inherited from Object.prototype
@@ -136,6 +146,7 @@ console.log(food.toString()); // Inherited from Object.prototype
 Custom Prototype:
 ```
 javascript
+
 function Stall(name) {
   this.name = name;
 }
@@ -150,6 +161,7 @@ Modern way? Use class (ES6+), but it’s just fancy syntax for prototypes:
 
 ```
 javascript
+
 class Stall {
   constructor(name) {
     this.name = name;
@@ -161,13 +173,22 @@ class Stall {
 ```
 
 # 6. this: Who’s Talking Lah?
+
 this is like pointing to “who’s doing the action” in your kampung story. Its value depends on how a function is called:
+
 Global context: this is window (in browsers) or undefined (in strict mode).
+```
 javascript
+
 console.log(this); // window (in browser, non-strict)
+```
+
 Object method:
+
  this is the object calling the method.
+ ```
 javascript
+
 let stall = {
   name: "Makcik",
   sell: function() {
@@ -175,15 +196,24 @@ let stall = {
   }
 };
 stall.sell(); // "Makcik sells food!"
+```
+
 Constructor:
+
  this is the new object being made.
+```
 javascript
+
 function Stall(name) {
   this.name = name;
   return this;
 }
+```
+
 Gotcha: In callbacks or loose functions, this can get confusing. Use bind(), call(), or arrow functions to control it:
+```
 javascript
+
 let stall = {
   name: "Ali",
   sell: function() {
@@ -191,10 +221,16 @@ let stall = {
   }
 };
 stall.sell(); // "Ali" (arrow function keeps 'this' as stall)
+```
+
 # 7. Async/Await and Promises: Waiting for Nasi
+
 JavaScript is single-threaded, but it can handle waiting tasks like waiting for your mee goreng without stopping the whole stall). Promises and async/await make this smooth.
+
 Promises: Like promising to deliver food. It’s either pending, fulfilled (done), or rejected (failed).
+```
 javascript
+
 let cookPromise = new Promise((resolve, reject) => {
   setTimeout(() => resolve("Nasi siap!"), 1000);
   // or reject("Burnt lah!") if fail
@@ -204,8 +240,13 @@ let cookPromise = new Promise((resolve, reject) => {
 });
 cookPromise.then(food => console.log(food)).catch(err => console.log(err));
 (error => console.log(error));
+```
+
 Async/Await (ES6+): Cleaner way to handle Promises, like ordering food and waiting politely:
+
+```
 javascript
+
 async function cook() {
   try {
     let food = await cookPromise;
@@ -215,26 +256,44 @@ async function cook() {
   }
 }
 cook();
+```
+
 Use async/await for readable code, but it’s just Promises underneath, lah.
+
 # 8. ES6+ Features: Modern Kampung Coding
-ES6 (2015) and later brought cool stuff to JavaScript, like upgrading your kampung house with Wi-Fi and aircon.
+
+ES6 (2015) and later brought cool stuff to JavaScript, like upgrading your kampung house with Wi-Fi and aircond.
+
 Arrow Functions:
+
 Short syntax, no own this (uses parent’s this). Great for callbacks.
+```
 javascript
+
   let add = (a, b) => x + y; a + b;
   add(2, 3); // 5
   // Or with block:
   let greet = name => { return `Jom, ${name}!`; };
   greet("Ali"); // "Jom, Ali!"
+```
+
 Destructuring:
+
 Unpack stuff like taking out snacks from a goodie bag.
+```
 javascript
+
   let stall = { name: "Makcik", food:" "roti"};
   let { name, food } = stall; // name = "Makcik", food = "roti"
   let [a, b] = [1, 2]; // a = 1, b = 2
+```
+
 Modules:
+
 Split code into files, like separate stalls in a pasar. Export and import stuff.
+```
 javascript
+
 // File: food.js
 export const dish = "nasi lemak";
 export function sell() {
@@ -245,6 +304,8 @@ export function sell() {
 import { dish, sell } from "./food.js";
 console.log(dish); // "nasi lemak"
 sell(); // "Come buy lah!"
+```
+
 Other ES6+ goodies: template literals (hello ${name}), spread/rest (...), let/const, and classes (mentioned earlier).
 Kampung Summary
 JavaScript is like running a kampung stall, lah:
