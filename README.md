@@ -134,15 +134,20 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
 **Why 5%?:** This is the pinnacle—specialization, innovation, and community leadership. Few reach this level, as it requires both technical mastery and influence.
 
 # How to Progress
+
 ## Learning Approach:
-0–40%: Focus on tutorials (e.g., freeCodeCamp, Node.js docs), build small projects, and practice daily coding.
-40–80%: Work on real-world projects, contribute to open-source, and read books like Node.js Design Patterns by Mario Casciaro.
-80–100%: Dive into Node.js source code, specialize in a niche, and engage with the community (e.g., GitHub, X posts on Node.js).
-Resources:
-Docs: Node.js official docs, Express docs, MDN for JavaScript.
-Courses: Udemy (e.g., Stephen Grider, Maximilian Schwarzmüller), Node.js official YouTube.
-Communities: Node.js Slack, X (#NodeJS), Stack Overflow.
-Time Estimate: Depending on your pace, 6–18 months for 0–80% (part-time), plus 1–2 years for 80–100% with real-world experience.
+
+**0–40%:** Focus on tutorials (e.g., freeCodeCamp, Node.js docs), build small projects, and practice daily coding.
+
+**40–80%:** Work on real-world projects, contribute to open-source, and read books like Node.js Design Patterns by Mario Casciaro.
+
+**80–100%**: Dive into Node.js source code, specialize in a niche, and engage with the community (e.g., GitHub, X posts on Node.js).
+
+**Resources:**
+**Docs:** Node.js official docs, Express docs, MDN for JavaScript.
+**Courses:** Udemy (e.g., Stephen Grider, Maximilian Schwarzmüller), Node.js official YouTube.
+**Communities:** Node.js Slack, X (#NodeJS), Stack Overflow.
+**Time Estimate:** Depending on your pace, 6–18 months for 0–80% (part-time), plus 1–2 years for 80–100% with real-world experience.
 
 # Notes
 Percentages are approximate and reflect effort/importance, not strict time or skill boundaries.
