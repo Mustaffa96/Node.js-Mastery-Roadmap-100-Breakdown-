@@ -144,9 +144,13 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
 **80–100%**: Dive into Node.js source code, specialize in a niche, and engage with the community (e.g., GitHub, X posts on Node.js).
 
 **Resources:**
+
 **Docs:** Node.js official docs, Express docs, MDN for JavaScript.
+
 **Courses:** Udemy (e.g., Stephen Grider, Maximilian Schwarzmüller), Node.js official YouTube.
+
 **Communities:** Node.js Slack, X (#NodeJS), Stack Overflow.
+
 **Time Estimate:** Depending on your pace, 6–18 months for 0–80% (part-time), plus 1–2 years for 80–100% with real-world experience.
 
 # Notes
