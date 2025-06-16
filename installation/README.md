@@ -147,6 +147,7 @@ pnpm’s cool because it reuses packages across projects, like sharing kuih with
   Now that you got Node.js and a package manager, let’s write and run a simple script. It’s like whipping up nasi goreng with whatever’s in the fridge.
 
 * **Create a Script:**
+
   Make a file called index.js in your kampung-app folder:
 
 ```javascript
@@ -164,6 +165,7 @@ app.listen(3000, () => {
 ```
 
 * **Run the Script:**
+
   If you didn’t set up a `"start"` script in `package.json`, you can run it directly:
 
 ```bash
