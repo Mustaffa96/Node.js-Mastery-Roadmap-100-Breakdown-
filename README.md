@@ -12,7 +12,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
   * Installing Node.js, using npm/yarn/pnpm, and running basic scripts. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/blob/main/installation/README.md)
   * REPL, modules (require, module.exports), and CommonJS vs. ES Modules. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/blob/main/module/README.md)
 
-* Milestones:
+* Milestones: [FREE Sample Projects](https://github.com/Mustaffa96/NodeJS-milestone-1)
   * Write simple scripts (e.g., file I/O, basic HTTP server using http).
   * Understand `package.json` and install dependencies.
   * Debug basic code using console.log or Node’s built-in debugger.
