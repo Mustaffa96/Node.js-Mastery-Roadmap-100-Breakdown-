@@ -147,7 +147,7 @@ pnpm’s cool because it reuses packages across projects, like sharing kuih with
   Now that you got Node.js and a package manager, let’s write and run a simple script. It’s like whipping up nasi goreng with whatever’s in the fridge.
 
 * **Create a Script:**
-Make a file called index.js in your kampung-app folder:
+  Make a file called index.js in your kampung-app folder:
 
 ```javascript
 console.log("Apa khabar, kampung! Let’s code!");
@@ -164,19 +164,19 @@ app.listen(3000, () => {
 ```
 
 * **Run the Script:**
-If you didn’t set up a `"start"` script in `package.json`, you can run it directly:
+  If you didn’t set up a `"start"` script in `package.json`, you can run it directly:
 
 ```bash
 node index.js
 ```
 
-Or, if you added the `"start"` script, use:
+  Or, if you added the `"start"` script, use:
 
 ```bash
 npm start
 ```
 
-(Or `yarn start`/`pnpm start` if you’re using those.)
+  (Or `yarn start`/`pnpm start` if you’re using those.)
 
 * **Check It Out:**
 Open your browser and go to http://localhost:3000. You’ll see “Selamat datang to my kampung app!” It’s like serving your nasi goreng to the whole kampung – simple but satisfying.
