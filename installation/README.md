@@ -9,10 +9,9 @@ Node.js is like the foundation of your coding rumah. Without it, your JavaScript
 Whether you’re on Windows, macOS, or Linux, Node.js got you covered. It’s like picking the right kain for your baju – one size fits all, but you gotta download the right one.
 
 * **Step 2: Download Node.js**
-
 Head to the official Node.js website. You’ll see two versions:
 
-   * LTS (Long-Term Support): This one’s stable, macam your mak’s nasi lemak recipe. Pick this for most projects.
+   * **LTS (Long-Term Support):** This one’s stable, macam your mak’s nasi lemak recipe. Pick this for most projects.
   
    * **Current:** This is the cutting-edge version, like trying your cousin’s experimental rendang. Fun, but maybe buggy.
 
