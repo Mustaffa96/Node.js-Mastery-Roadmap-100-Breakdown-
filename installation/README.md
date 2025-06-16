@@ -22,10 +22,10 @@ Node.js is like the foundation of your coding rumah. Without it, your JavaScript
   
   After installing, open your terminal (Windows: Command Prompt or PowerShell; macOS/Linux: Terminal). Type these commands to check if Node.js and npm (Node Package Manager) are ready to rock:
 
-  ```bash
+```bash
 node -v
 npm -v
-  ```
+```
   
   If you see version numbers (e.g., v20.17.0 for Node, 10.8.2 for npm), you’re golden, bro! If not, something’s wrong – maybe reinstall or holler for help.
 
@@ -46,12 +46,12 @@ mkdir kampung-app
 cd kampung-app
 npm init -y
 ```
-
-This creates a `package.json` file, macam your project’s resipi book, listing all your dependencies.
+  
+  This creates a `package.json` file, macam your project’s resipi book, listing all your dependencies.
 
 * **Install a Package:**
 
-Wanna add a library, like express (for building web apps)? Run:
+  Wanna add a library, like `express` (for building web apps)? Run:
 
 ```bash
 npm install express
@@ -60,19 +60,20 @@ npm install express
 This downloads `express` and adds it to `node_modules` and `package.json`. It’s like buying cili padi for your sambal – now you’re ready to cook.
 
 * **Run Scripts:**
-In `package.json`, you can define scripts. For example, add this under `"scripts"`:
+
+  In `package.json`, you can define scripts. For example, add this under `"scripts"`:
 
 ```json
 "start": "node index.js"
 ```
-
-Then, run:
+  
+  Then, run:
 
 ```bash
 npm start
 ```
-
-It’s like shouting “Makan time!” and your app runs.
+  
+  It’s like shouting “Makan time!” and your app runs.
 
 **Yarn – The Hip Cousin, Like Adding Extra Gula to Your Teh Tarik**
 
@@ -84,7 +85,7 @@ npm install -g yarn
 
 * **Initialize a Project:**
 
-Same vibe as npm:
+  Same vibe as npm:
 
 ```bash
 yarn init -y
@@ -92,7 +93,7 @@ yarn init -y
 
 * **Install a Package:**
 
-Add express with:
+  Add express with:
 
 ```bash
 yarn add express
@@ -100,7 +101,7 @@ yarn add express
 
 * **Run Scripts:**
 
-Same as npm, just use:
+  Same as npm, just use:
 
 ```bash
 yarn start
@@ -143,7 +144,7 @@ pnpm’s cool because it reuses packages across projects, like sharing kuih with
 * pnpm: Choose this if you’re working on big projects or wanna save space.
 
 # 3. Running Basic Scripts – Like Cooking Nasi Goreng Kampung
-Now that you got Node.js and a package manager, let’s write and run a simple script. It’s like whipping up nasi goreng with whatever’s in the fridge.
+  Now that you got Node.js and a package manager, let’s write and run a simple script. It’s like whipping up nasi goreng with whatever’s in the fridge.
 
 * **Create a Script:**
 Make a file called index.js in your kampung-app folder:
