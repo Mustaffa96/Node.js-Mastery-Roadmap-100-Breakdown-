@@ -99,21 +99,24 @@ console.log(name); // Output: Kuih Lapis
 **Kampung vibe:** It’s like a new surau with air-con—sleek, modern, but some old folks (atok’s Node.js projects) might still prefer the old way.
 
 **c) CommonJS vs. ES Modules: Quick Comparison**
-| Thing          | CommonJS                  | ES Modules                            |
-| -------------- |:-------------------------:|:-------------------------------------:|
-| Borrow         | require                   | import                                |
-| Share          | module.exports            | export                                |
-| Loading        | Synchronous (wait lah)    | Asynchronous (multitasking sikit)     |
-| Where it works | Mostly Node.js            | Browsers + Node.js                    |
-| File extension | .js                       | .mjs or .js with "type": "module"     |
-| Kampung vibe   | Atok’s old-school sharing | New kampung with WhatsApp group chats |
+| Thing              | CommonJS                    | ES Modules                                  |
+| ------------------ |:---------------------------:|:-------------------------------------------:|
+| **Borrow**         | `require`                   | `import`                                    |
+| **Share**          | `module.exports`            | `export`                                    |
+| **Loading**        | Synchronous (wait *lah*)    | Asynchronous (multitasking *sikit*)         |
+| **Where it works** | Mostly Node.js              | Browsers + Node.js                          |
+| **File extension** | `.js`                       | `.mjs` or `.js` with `"type":` `"module"`   |
+| **Kampung vibe**   | *Atok*’s old-school sharing | New *kampung* with WhatsApp group chats     |
 
 **d) Which One to Use?**
-CommonJS: If you’re working on an older Node.js project or just want something simple that works without extra setup, use this. It’s like sticking to nasi lemak for breakfast.
-ES Modules: If you’re building a web app, using modern JavaScript, or want to future-proof your code, go for ESM. It’s like upgrading to nasi lemak with a side of avocado toast.
-In Node.js, you can mix them, but it’s a bit lah—ESM can import CommonJS modules, but CommonJS susah sikit can’t import ESM directly.
-Final Kampung Wrap-Up
-REPL: Your kampung notepad for testing JavaScript code, like trying a bit of sambal* before the kenduri.
-Modules: Like sharing kuih or rendang between kampung houses using require/module.exports (CommonJS) or import/export (ES Modules).
-CommonJS vs. ES Modules: CommonJS is the classic, Node.js-friendly way; ES Modules is the modern, browser-and-Node.js way. Pick based on your project kampung vibe.
-So, kawan, you got any specific module or REPL question? Or you want me to cook up more examples, kampung style? Just lemong me know lah!
+* **CommonJS:** If you’re working on an older Node.js project or just want something simple that works without extra setup, use this. It’s like sticking to nasi lemak for breakfast.
+
+* **ES Modules:** If you’re building a web app, using modern JavaScript, or want to future-proof your code, go for ESM. It’s like upgrading to nasi lemak with a side of avocado toast.
+
+* In Node.js, you can mix them, but it’s a bit lah—ESM can import CommonJS modules, but CommonJS susah sikit can’t import ESM directly.
+
+# Final Kampung Wrap-Up
+* **REPL:** Your kampung notepad for testing JavaScript code, like trying a bit of sambal* before the kenduri.
+* **Modules:** Like sharing kuih or rendang between kampung houses using require/module.exports (CommonJS) or import/export (ES Modules).
+* **CommonJS vs. ES Modules:** CommonJS is the classic, Node.js-friendly way; ES Modules is the modern, browser-and-Node.js way. Pick based on your project kampung vibe.
+
