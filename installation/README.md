@@ -175,17 +175,20 @@ Or, if you added the `"start"` script, use:
 npm start
 ```
 
-(Or yarn start/pnpm start if you’re using those.)
-Check It Out:
+(Or `yarn start`/`pnpm start` if you’re using those.)
+
+* **Check It Out:**
 Open your browser and go to http://localhost:3000. You’ll see “Selamat datang to my kampung app!” It’s like serving your nasi goreng to the whole kampung – simple but satisfying.
-4. Kampung Tips for Smooth Coding
-Keep Node Updated: Run npm install -g npm or check the Node.js site for updates, macam sharpening your parang.
-Clear Cache if Problems: If npm/yarn/pnpm acts up, clear the cache:
-npm: npm cache clean --force
-Yarn: yarn cache clean
-pnpm: pnpm store prune
-Use .gitignore: Don’t upload node_modules to GitHub. Add it to .gitignore, like keeping your dirty laundry out of sight.
-Learn More: Check out Node.js docs or npm docs for deeper knowledge, macam listening to your nenek’s stories.
-5. Wrap-Up, Kampung Style
+
+# 4. Kampung Tips for Smooth Coding
+* Keep Node Updated: Run npm install -g npm or check the Node.js site for updates, macam sharpening your parang.
+* **Clear Cache if Problems:** If npm/yarn/pnpm acts up, clear the cache:
+ * npm: npm cache clean --force
+ * Yarn: yarn cache clean
+ * pnpm: pnpm store prune
+* **Use .gitignore:** Don’t upload node_modules to GitHub. Add it to .gitignore, like keeping your dirty laundry out of sight.
+* **Learn More:** Check out Node.js docs or npm docs for deeper knowledge, macam listening to your nenek’s stories.
+
+# 5. Wrap-Up, Kampung Style
 There you go, bro! You’ve installed Node.js, picked your package manager (npm, yarn, or pnpm), and ran a basic script, all while chilling kampung style. It’s like building a small rumah, stocking the dapur with ingredients, and cooking a quick dish for your friends. Now, go explore, write more code, and make your kampung app the talk of the town!
-If you got questions or something’s not working, just shout, “Oi, tolong sikit!” and I’ll help you out. Selamat coding, lah! 🚀
+
