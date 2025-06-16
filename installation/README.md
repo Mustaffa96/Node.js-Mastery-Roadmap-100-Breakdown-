@@ -12,9 +12,9 @@ Whether you’re on Windows, macOS, or Linux, Node.js got you covered. It’s li
 
 Head to the official Node.js website. You’ll see two versions:
 
-  * **LTS (Long-Term Support):** This one’s stable, macam your mak’s nasi lemak recipe. Pick this for most projects.
+   * **LTS (Long-Term Support):** This one’s stable, macam your mak’s nasi lemak recipe. Pick this for most projects.
   
-  * **Current:** This is the cutting-edge version, like trying your cousin’s experimental rendang. Fun, but maybe buggy.
+   * **Current:** This is the cutting-edge version, like trying your cousin’s experimental rendang. Fun, but maybe buggy.
 
 Click the big green button for LTS, download the installer, and run it. It’s like hammering nails into your kampung house – just follow the wizard, click “Next” sampai selesai.
 
