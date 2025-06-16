@@ -18,11 +18,11 @@ Node.js is like the foundation of your coding rumah. Without it, your JavaScript
   
   Click the big green button for LTS, download the installer, and run it. It’s like hammering nails into your kampung house – just follow the wizard, click “Next” sampai selesai.
 
-  * **Step 3: Verify Installation**
+* **Step 3: Verify Installation**
   
   After installing, open your terminal (Windows: Command Prompt or PowerShell; macOS/Linux: Terminal). Type these commands to check if Node.js and npm (Node Package Manager) are ready to rock:
 
-```bash
+  ```bash
 node -v
 npm -v
 ```
