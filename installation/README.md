@@ -148,7 +148,7 @@ pnpm’s cool because it reuses packages across projects, like sharing kuih with
 
 * **Create a Script:**
 
-  Make a file called index.js in your kampung-app folder:
+  Make a file called `index.js` in your `kampung-app` folder:
 
 ```javascript
 console.log("Apa khabar, kampung! Let’s code!");
