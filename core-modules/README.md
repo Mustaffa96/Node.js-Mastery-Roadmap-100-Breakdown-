@@ -7,6 +7,7 @@ Aight, bro, let’s break down these Node.js core modules like we’re chilling 
 * You wanna read a file? It’s like opening a drawer to check out a letter: `fs.readFile('recipe.txt', (err, data) => { console.log(data); })`.
 * Wanna write a new file? It’s like scribbling a new note and tossing it into the cabinet: `fs.writeFile('newRecipe.txt', 'Add more chili', () => {})`.
 * It got two styles: **sync** (wait until done, like your mak telling you to finish your chores before playing) or **async** (do it in the background, like gossip spreading in the kampung).
+
 **use case:** Say you’re keeping track of how many coconuts you picked this week. You use fs to save that number to a file and read it later to show off to your neighbor.
 
 # 2. path - The Kampung Jalan-Jalan Guide
@@ -16,6 +17,7 @@ Aight, bro, let’s break down these Node.js core modules like we’re chilling 
 * Wanna join paths? It’s like telling your buddy, “Go from my house to the warung”: `path.join('kampung', 'warung', 'menu.txt')` gives you `kampung/warung/menu.txt`.
 * Wanna know the file name? `path.basename('/kampung/nasi.txt')` gives you `nasi.txt`.
 * It handles all the messy stuff like making sure paths work on any computer.
+
 **use case:** You’re building a small app to list all the durians in your orchard. path helps you find the right folder and file, no matter where your app runs, so you don’t end up lost in some random directory.
 
 # 3. http - The Pos Laju
@@ -25,6 +27,7 @@ Aight, bro, let’s break down these Node.js core modules like we’re chilling 
 * You set up a server: `http.createServer((req, res) => { res.write('Hello, kampung!'); res.end(); }).listen(8080);`. It’s like opening a stall and waiting for customers.
 * Someone visits your site (sends a request), you send back a response, like handing them a plate of nasi goreng.
 * It’s the backbone for web apps, APIs, all that jazz.
+
 **use case:** You wanna share your kampung’s weekly pasar malam schedule online. Use http to make a simple server that shows the schedule when someone visits http://kampung.com.
 
 # 4. events - The Gong Beater
@@ -44,6 +47,7 @@ Aight, bro, let’s break down these Node.js core modules like we’re chilling 
 * There’s **writable streams** (like pouring water into a tank): `fs.createWriteStream('copyVideo.mp4')`.
 * You can **pipe** streams, like connecting a hose: `readStream.pipe(writeStream)`. Data flows smoothly.
 * Types: Readable, Writable, Duplex (both ways), Transform (change data as it flows).
+
 **use case:** You’re uploading a video of your kampung’s kenduri to YouTube. Instead of loading the whole 1GB file into memory, stream sends it chunk by chunk, like passing small pails of water along a line.
 
 # 6. buffer - The Food Container
@@ -53,6 +57,7 @@ Aight, bro, let’s break down these Node.js core modules like we’re chilling 
 * Create a buffer: `let buf = Buffer.from('Nasi Lemak');`. It’s like packing food into a container.
 * Read or change it: `buf.toString()` gives you `Nasi Lemak` back, or `buf[0]` lets you peek at the first byte.
 * It’s super useful for streams, files, or network stuff where data isn’t just text.
+
 **use case:** You’re sending a photo of your kampung’s sunset over WhatsApp. `buffer` helps handle the raw image data before it’s sent, like packing the photo into a digital container.
 
 # Summary
