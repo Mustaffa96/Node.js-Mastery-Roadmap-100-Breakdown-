@@ -6,11 +6,11 @@ Node.js is like the foundation of your coding rumah. Without it, your JavaScript
 
 * **Step 1: Check Your OS, Lah**
 
- Whether you’re on Windows, macOS, or Linux, Node.js got you covered. It’s like picking the right kain for your baju – one size fits all, but you gotta download the right one.
+Whether you’re on Windows, macOS, or Linux, Node.js got you covered. It’s like picking the right kain for your baju – one size fits all, but you gotta download the right one.
 
 * **Step 2: Download Node.js**
 
- Head to the official Node.js website. You’ll see two versions:
+Head to the official Node.js website. You’ll see two versions:
 
   * **LTS (Long-Term Support):** This one’s stable, macam your mak’s nasi lemak recipe. Pick this for most projects.
   
@@ -30,69 +30,125 @@ npm -v
 If you see version numbers (e.g., v20.17.0 for Node, 10.8.2 for npm), you’re golden, bro! If not, something’s wrong – maybe reinstall or holler for help.
 
 # 2. Using npm, yarn, or pnpm – Like Choosing Your Pasar Ingredients
+
 Node.js comes with npm, but you got options like yarn or pnpm, macam picking between ikan kembung, ayam, or daging at the pasar. Each one’s a package manager to handle your project’s dependencies (libraries, tools, etc.). Let’s break it down, kampung style.
-npm – The OG, Like Your Mak’s Sambal
+
+**npm – The OG, Like Your Mak’s Sambal**
+
 npm is the default package manager, solid and reliable like your mak’s sambal recipe. It’s already installed with Node.js, so no extra work.
-Initialize a Project:
-Create a folder for your project, like kampung-app, and run:
-bash
+
+* **Initialize a Project:**
+
+Create a folder for your project, like `kampung-app`, and run:
+
+```bash
 mkdir kampung-app
 cd kampung-app
 npm init -y
-This creates a package.json file, macam your project’s resipi book, listing all your dependencies.
-Install a Package:
+```
+
+This creates a `package.json` file, macam your project’s resipi book, listing all your dependencies.
+
+* **Install a Package:**
+
 Wanna add a library, like express (for building web apps)? Run:
-bash
+
+```bash
 npm install express
-This downloads express and adds it to node_modules and package.json. It’s like buying cili padi for your sambal – now you’re ready to cook.
-Run Scripts:
-In package.json, you can define scripts. For example, add this under "scripts":
-json
+```
+
+This downloads `express` and adds it to `node_modules` and `package.json`. It’s like buying cili padi for your sambal – now you’re ready to cook.
+
+* **Run Scripts:**
+In `package.json`, you can define scripts. For example, add this under `"scripts"`:
+
+```json
 "start": "node index.js"
+```
+
 Then, run:
-bash
+
+```bash
 npm start
+```
+
 It’s like shouting “Makan time!” and your app runs.
-Yarn – The Hip Cousin, Like Adding Extra Gula to Your Teh Tarik
+
+**Yarn – The Hip Cousin, Like Adding Extra Gula to Your Teh Tarik**
+
 Yarn is faster and fancier than npm, with better caching, macam your cousin who shows up with a new phone. To install Yarn:
-bash
+
+```bash
 npm install -g yarn
-Initialize a Project:
+```
+
+* **Initialize a Project:**
+
 Same vibe as npm:
-bash
+
+```bash
 yarn init -y
-Install a Package:
+```
+
+* **Install a Package:**
+
 Add express with:
-bash
+
+```bash
 yarn add express
-Run Scripts:
+```
+
+* **Run Scripts:**
+
 Same as npm, just use:
-bash
+
+```bash
 yarn start
+```
+
 Yarn’s got a cleaner output and feels smoother, like a well-paved kampung road.
-pnpm – The Lightweight Atuk, Like Using a Bicycle Instead of a Car
+
+**pnpm – The Lightweight Atuk, Like Using a Bicycle Instead of a Car**
+
 pnpm is super efficient, saving disk space and running fast, macam your atuk who’s still fit riding his basikal. To install pnpm:
-bash
+
+```bash
 npm install -g pnpm
-Initialize a Project:
-bash
+```
+
+* **Initialize a Project:**
+
+```bash
 pnpm init
-Install a Package:
-bash
+```
+
+* **Install a Package:**
+
+```bash
 pnpm add express
-Run Scripts:
-bash
+```
+
+* **Run Scripts:**
+
+```bash
 pnpm start
+```
+
 pnpm’s cool because it reuses packages across projects, like sharing kuih with the whole kampung.
-Which One to Pick?
-npm: Stick with it if you’re new or want no hassle.
-Yarn: Go for it if you want speed and a modern vibe.
-pnpm: Choose this if you’re working on big projects or wanna save space.
-3. Running Basic Scripts – Like Cooking Nasi Goreng Kampung
+
+**Which One to Pick?**
+
+* npm: Stick with it if you’re new or want no hassle.
+* Yarn: Go for it if you want speed and a modern vibe.
+* pnpm: Choose this if you’re working on big projects or wanna save space.
+
+# 3. Running Basic Scripts – Like Cooking Nasi Goreng Kampung
 Now that you got Node.js and a package manager, let’s write and run a simple script. It’s like whipping up nasi goreng with whatever’s in the fridge.
-Create a Script:
+
+* Create a Script:
 Make a file called index.js in your kampung-app folder:
-javascript
+
+```javascript
 console.log("Apa khabar, kampung! Let’s code!");
 const express = require("express");
 const app = express();
@@ -104,13 +160,21 @@ app.get("/", (req, res) => {
 app.listen(3000, () => {
   console.log("Server running at http://localhost:3000, bro!");
 });
-Run the Script:
-If you didn’t set up a "start" script in package.json, you can run it directly:
-bash
+```
+
+* Run the Script:
+If you didn’t set up a `"start"` script in `package.json`, you can run it directly:
+
+```bash
 node index.js
-Or, if you added the "start" script, use:
-bash
+```
+
+Or, if you added the `"start"` script, use:
+
+```bash
 npm start
+```
+
 (Or yarn start/pnpm start if you’re using those.)
 Check It Out:
 Open your browser and go to http://localhost:3000. You’ll see “Selamat datang to my kampung app!” It’s like serving your nasi goreng to the whole kampung – simple but satisfying.
