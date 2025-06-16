@@ -24,8 +24,8 @@ fs.readFile('kampung.txt', 'utf8', (error, data) => {
 ```
 
 * **How it works:** You tell readFile to read a file, and you give it a callback function. When the file’s ready (or if something goes wrong), the callback runs with either the data or an error.
-* 
-**Kampung vibe:** It’s like waiting for the uncle to shout, “Roti canai siap!” But if you order too many things (nested callbacks), it becomes a mess, like shouting orders to five different uncles at once. This mess is called callback hell—like a chaotic pasar malam.
+
+* **Kampung vibe:** It’s like waiting for the uncle to shout, “Roti canai siap!” But if you order too many things (nested callbacks), it becomes a mess, like shouting orders to five different uncles at once. This mess is called callback hell—like a chaotic pasar malam.
   
 ### 2. Promises: A More Organized Mamak Queue
 Now, promises are like a modernized mamak stall with a proper queue system. Instead of shouting, the uncle gives you a number, and you wait for your turn. A promise is an object that says, “I’ll give you the result later, either success (roti canai) or failure (no more flour, sorry lah).”
