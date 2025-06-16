@@ -24,7 +24,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
 **Goal:** Master Node.js core modules and start using its ecosystem.
 
 * Key Knowledge:
-  * Core modules: fs (file system), path, http, events, stream, buffer.
+  * Core modules: fs (file system), path, http, events, stream, buffer. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/blob/main/core-modules/README.md)
   * Asynchronous programming: callbacks, promises, async/await, error handling.
   * Event loop: how Node.js handles concurrency, microtasks vs. macrotasks.
   * npm ecosystem: installing and managing packages, semantic versioning, scripts.
