@@ -7,21 +7,28 @@ Imagine you’re in your kampung kitchen, trying out a new recipe for nasi goren
 * **What it is:** REPL is a tool where you type JavaScript code, press Enter, and it runs instantly, showing you the result. It’s like talking to your computer in real-time.
 
 * **How it works:**
-  * **Read:** You type something, like 2 + 2.
+  * **Read:** You type something, like `2 + 2`.
   * **Eval:** The computer thinks, “Aha, this is math!” and calculates it.
-  * **Print:** It shows you 4.
+  * **Print:** It shows you `4`.
   * **Loop:** It waits for your next command, like a patient makcik at the pasar.
-Where you use it: Open your computer’s terminal and type node. Boom, you’re in the Node.js REPL! Try typing console.log("Hello, kampung!") and see what happens.
-Kampung analogy: It’s like testing a small scoop of sambal before you serve it to the whole kenduri. No need to write a full program, just try and see lah.
-2. Modules (require, module.exports): The Kampung "Sharing System"
-In a kampung, everyone shares, right? Makcik Salmah makes awesome kuih, so you borrow some for your tea. In return, you give her your famous rendang recipe. In JavaScript, modules are how different parts of your code share stuff, like tools or functions, so you don’t have to rewrite everything.
-a) What’s a Module?
-A module is like a little kampung house (a file) that has its own stuff (code, functions, variables). You can decide what to share with other houses (files) and what to keep private, like your secret sambal recipe.
-b) require: Borrowing from Your Neighbor
-What it does: require is like going to Makcik Salmah’s house and asking, “Can I borrow your kuih function?”
-How it works: In your JavaScript file, you write const kuih = require('./makcik-salmah.js');. This pulls in whatever Makcik Salmah is sharing from her file.
-Example:
-javascript
+  * 
+**Where you use it:** Open your computer’s terminal and type node. Boom, you’re in the Node.js REPL! Try typing console.log("Hello, kampung!") and see what happens.
+
+**Kampung analogy:** It’s like testing a small scoop of sambal before you serve it to the whole kenduri. No need to write a full program, just try and see lah.
+
+# 2. Modules (require, module.exports): The Kampung "Sharing System"
+
+In a *kampung*, everyone shares, right? *Makcik Salmah* makes awesome *kuih*, so you borrow some for your tea. In return, you give her your famous *rendang* recipe. In JavaScript, **modules** are how different parts of your code share stuff, like tools or functions, so you don’t have to rewrite everything.
+**a) What’s a Module?**
+A module is like a little *kampung* house (a file) that has its own stuff (code, functions, variables). You can decide what to share with other houses (files) and what to keep private, like your secret *sambal* recipe.
+
+**b) require: Borrowing from Your Neighbor**
+* **What it does:** `require` is like going to *Makcik Salmah*’s house and asking, “Can I borrow your *kuih* function?”
+
+* **How it works:** In your JavaScript file, you write const `kuih = require('./makcik-salmah.js');`. This pulls in whatever *Makcik Salmah* is sharing from her file.
+
+* **Example:**
+```javascript
 // makcik-salmah.js
 const makeKuih = () => "Kuih muih sedap!";
 module.exports = makeKuih;
@@ -29,7 +36,9 @@ module.exports = makeKuih;
 // my-file.js
 const kuih = require('./makcik-salmah.js');
 console.log(kuih()); // Output: Kuih muih sedap!
-Kampung analogy: You’re borrowing Makcik Salmah’s kuih without needing to know how she made it. Just use lah!
+```
+
+**Kampung analogy:** You’re borrowing Makcik Salmah’s kuih without needing to know how she made it. Just use lah!
 c) module.exports: Sharing Your Goodies
 What it does: module.exports is how you decide what to share from your file. It’s like putting a plate of rendang outside your house for neighbors to take.
 How it works: You attach whatever you want to share (functions, objects, etc.) to module.exports.
