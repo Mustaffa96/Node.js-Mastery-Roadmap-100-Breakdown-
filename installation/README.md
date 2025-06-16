@@ -26,8 +26,8 @@ Node.js is like the foundation of your coding rumah. Without it, your JavaScript
 node -v
 npm -v
 ```
-
-If you see version numbers (e.g., v20.17.0 for Node, 10.8.2 for npm), you’re golden, bro! If not, something’s wrong – maybe reinstall or holler for help.
+  
+  If you see version numbers (e.g., v20.17.0 for Node, 10.8.2 for npm), you’re golden, bro! If not, something’s wrong – maybe reinstall or holler for help.
 
 # 2. Using npm, yarn, or pnpm – Like Choosing Your Pasar Ingredients
 
@@ -39,7 +39,7 @@ npm is the default package manager, solid and reliable like your mak’s sambal 
 
 * **Initialize a Project:**
 
-Create a folder for your project, like `kampung-app`, and run:
+  Create a folder for your project, like `kampung-app`, and run:
 
 ```bash
 mkdir kampung-app
