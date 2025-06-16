@@ -145,7 +145,7 @@ pnpm’s cool because it reuses packages across projects, like sharing kuih with
 # 3. Running Basic Scripts – Like Cooking Nasi Goreng Kampung
 Now that you got Node.js and a package manager, let’s write and run a simple script. It’s like whipping up nasi goreng with whatever’s in the fridge.
 
-* Create a Script:
+* **Create a Script:**
 Make a file called index.js in your kampung-app folder:
 
 ```javascript
@@ -162,7 +162,7 @@ app.listen(3000, () => {
 });
 ```
 
-* Run the Script:
+* **Run the Script:**
 If you didn’t set up a `"start"` script in `package.json`, you can run it directly:
 
 ```bash
@@ -181,14 +181,19 @@ npm start
 Open your browser and go to http://localhost:3000. You’ll see “Selamat datang to my kampung app!” It’s like serving your nasi goreng to the whole kampung – simple but satisfying.
 
 # 4. Kampung Tips for Smooth Coding
-* Keep Node Updated: Run npm install -g npm or check the Node.js site for updates, macam sharpening your parang.
+
+* **Keep Node Updated:** Run npm install -g npm or check the Node.js site for updates, macam sharpening your parang.
+
 * **Clear Cache if Problems:** If npm/yarn/pnpm acts up, clear the cache:
- * npm: npm cache clean --force
- * Yarn: yarn cache clean
- * pnpm: pnpm store prune
+  * npm: npm cache clean --force
+  * Yarn: yarn cache clean
+  * pnpm: pnpm store prune
+
 * **Use .gitignore:** Don’t upload node_modules to GitHub. Add it to .gitignore, like keeping your dirty laundry out of sight.
+
 * **Learn More:** Check out Node.js docs or npm docs for deeper knowledge, macam listening to your nenek’s stories.
 
 # 5. Wrap-Up, Kampung Style
+
 There you go, bro! You’ve installed Node.js, picked your package manager (npm, yarn, or pnpm), and ran a basic script, all while chilling kampung style. It’s like building a small rumah, stocking the dapur with ingredients, and cooking a quick dish for your friends. Now, go explore, write more code, and make your kampung app the talk of the town!
 
