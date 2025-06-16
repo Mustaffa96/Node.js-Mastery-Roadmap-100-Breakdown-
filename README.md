@@ -9,7 +9,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
 * Key Knowledge:
   * JavaScript essentials: variables, data types, functions, closures, prototypes, this, async/await, promises, and ES6+ features (arrow functions, destructuring, modules). [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/blob/main/essentials/README.md)
   * Node.js basics: what is Node.js, event-driven architecture, single-threaded non-blocking I/O model. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/blob/main/basic_nodejs/README.md)
-  * Installing Node.js, using npm/yarn/pnpm, and running basic scripts.
+  * Installing Node.js, using npm/yarn/pnpm, and running basic scripts. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/blob/main/installation/README.md)
   * REPL, modules (require, module.exports), and CommonJS vs. ES Modules.
 
 * Milestones:
