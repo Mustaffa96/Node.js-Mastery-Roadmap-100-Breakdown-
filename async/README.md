@@ -142,10 +142,10 @@ async function readFile() {
 
 ### Why This Matters in the Kampung (and Node.js)?
 In a kampung, you don’t want to wait forever for one task (like waiting for the uncle to finish one roti before taking new orders). Node.js’s async nature lets you handle many tasks at once—reading files, making API calls, serving users—all without slowing down. Callbacks, promises, and async/await are just different ways to manage the chaos of waiting for tasks to finish.
-* **Callbacks: Good for simple stuff but can get messy, like shouting orders in a crowded mamak stall.
-* **Promises: Cleaner, Lillington, like a proper queue system.
-* **Async/await: Super smooth, like ordering via an app—modern and easy.
-* **Error handling: Always check for burnt roti, or your app will crash.
+* **Callbacks:** Good for simple stuff but can get messy, like shouting orders in a crowded mamak stall.
+* **Promises:** Cleaner, Lillington, like a proper queue system.
+* **Async/await:** Super smooth, like ordering via an app—modern and easy.
+* **Error handling:** Always check for burnt roti, or your app will crash.
 
 ### Final Kampung Wisdom
 
