@@ -83,9 +83,9 @@ getKampungFile();
 ```
 
 * **How it works:**
-* **`async`:** You mark a function as async, meaning it will return a promise.
-* **`await`:** You use await to pause until the promise resolves (like waiting for the roti to arrive via the app). It only works inside async functions.
-* **Error handling:** Wrap await in a try/catch block to catch errors, like if the app crashes or the uncle forgets your order.
+* `async`: You mark a function as `async`, meaning it will return a promise.
+* `await`: You use `await` to pause until the promise resolves (like waiting for the roti to arrive via the app). It only works inside `async` functions.
+* **Error handling:** Wrap `await` in a `try/catch` block to catch errors, like if the app crashes or the uncle forgets your order.
 **Kampung vibe:** It’s like using an app to order food—everything feels smooth and simple, but behind the scenes, the app is still handling the queue (promises).
 
 You can also mix and match:
