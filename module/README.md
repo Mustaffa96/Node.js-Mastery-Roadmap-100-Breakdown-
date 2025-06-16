@@ -11,7 +11,7 @@ Imagine you’re in your kampung kitchen, trying out a new recipe for nasi goren
   * **Eval:** The computer thinks, “Aha, this is math!” and calculates it.
   * **Print:** It shows you `4`.
   * **Loop:** It waits for your next command, like a patient makcik at the pasar.
-  * 
+ 
 **Where you use it:** Open your computer’s terminal and type node. Boom, you’re in the Node.js REPL! Try typing console.log("Hello, kampung!") and see what happens.
 
 **Kampung analogy:** It’s like testing a small scoop of sambal before you serve it to the whole kenduri. No need to write a full program, just try and see lah.
@@ -39,11 +39,14 @@ console.log(kuih()); // Output: Kuih muih sedap!
 ```
 
 **Kampung analogy:** You’re borrowing Makcik Salmah’s kuih without needing to know how she made it. Just use lah!
-c) module.exports: Sharing Your Goodies
-What it does: module.exports is how you decide what to share from your file. It’s like putting a plate of rendang outside your house for neighbors to take.
-How it works: You attach whatever you want to share (functions, objects, etc.) to module.exports.
-Example:
-javascript
+
+**c) module.exports: Sharing Your Goodies**
+* **What it does:** `module.exports` is how you decide what to share from your file. It’s like putting a plate of rendang outside your house for neighbors to take.
+* **How it works:** You attach whatever you want to share (functions, objects, etc.) to `module.exports`.
+
+* **Example:**
+
+```javascript
 // atok.js
 const wisdom = "Sabar itu separuh dari iman.";
 module.exports = wisdom;
@@ -51,64 +54,61 @@ module.exports = wisdom;
 // main.js
 const atokWisdom = require('./atok.js');
 console.log(atokWisdom); // Output: Sabar itu separuh dari iman.
-Kampung analogy: You’re telling the kampung, “Here’s my rendang recipe, take it!” but keeping your secret sambal recipe private.
-3. CommonJS vs. ES Modules: Old Kampung vs. New Kampung Rules
-Now, let’s talk about two ways JavaScript handles modules: CommonJS (the old kampung way) and ES Modules (the modern, bandar-inspired way). It’s like comparing atok’s wooden house to a new kampung condo with Wi-Fi.
-a) CommonJS: The Classic Kampung Way
-What it is: CommonJS is the older system used in Node.js to handle modules. It’s like how kampung folks used to trade stuff by shouting across the fence.
-How it works: Uses require to borrow and module.exports to share, like we talked about above.
-Key features:
-Synchronous: It loads modules one by one, like waiting for Makcik Salmah to finish baking before you get her kuih.
-Works great in Node.js for server-side stuff.
-Files don’t need a special extension, just .js.
-Example:
-javascript
+```
+
+**Kampung analogy:** You’re telling the kampung, “Here’s my rendang recipe, take it!” but keeping your secret sambal recipe private.
+
+# 3. CommonJS vs. ES Modules: Old Kampung vs. New Kampung Rules
+Now, let’s talk about two ways JavaScript handles modules: **CommonJS** (the old kampung way) and **ES Modules** (the modern, bandar-inspired way). It’s like comparing atok’s wooden house to a new kampung condo with Wi-Fi.
+**a) CommonJS: The Classic Kampung Way**
+* **What it is:** CommonJS is the older system used in Node.js to handle modules. It’s like how kampung folks used to trade stuff by shouting across the fence.
+* **How it works:** Uses require to borrow and module.exports to share, like we talked about above.
+* **Key features:**
+  * Synchronous: It loads modules one by one, like waiting for Makcik Salmah to finish baking before you get her kuih.
+  * Works great in Node.js for server-side stuff.
+  * Files don’t need a special extension, just `.js`.
+ 
+**Example:**
+```javascript
 // kuih.js
 module.exports = { name: "Kuih Lapis" };
 
 // main.js
 const kuih = require('./kuih.js');
 console.log(kuih.name); // Output: Kuih Lapis
-Kampung vibe: It’s reliable, like atok’s old bicycle. Everyone in the kampung (Node.js) knows how to use it.
-b) ES Modules: The Modern Kampung Way
-What it is: ES Modules (ESM) is the newer, fancier way introduced in modern JavaScript (ES6). It’s like the kampung got a makeover with solar panels and fiber internet.
-How it works: Uses import to borrow and export to share, instead of require and module.exports.
-Key features:
-Asynchronous: It can load modules in the background, like ordering kuih online while you do other stuff.
-Works in browsers and Node.js (since Node 12+).
-You need to tell Node.js you’re using ESM by adding "type": "module" in your package.json or using .mjs file extensions.
-Example:
-javascript
+```
+* **Kampung vibe:** It’s reliable, like atok’s old bicycle. Everyone in the kampung (Node.js) knows how to use it.
+
+**b) ES Modules: The Modern Kampung Way**
+* **What it is:** ES Modules (ESM) is the newer, fancier way introduced in modern JavaScript (ES6). It’s like the kampung got a makeover with solar panels and fiber internet.
+* **How it works**: Uses import to borrow and export to share, instead of require and module.exports.
+* **Key features:**
+  * Asynchronous: It can load modules in the background, like ordering kuih online while you do other stuff.
+  * Works in browsers and Node.js (since Node 12+).
+  * You need to tell Node.js you’re using ESM by adding "type": "module" in your `package.json` or using `.mjs` file extensions.
+ 
+* **Example:**
+```javascript
 // kuih.mjs
 export const name = "Kuih Lapis";
 
 // main.mjs
 import { name } from './kuih.mjs';
 console.log(name); // Output: Kuih Lapis
-Kampung vibe: It’s like a new surau with air-con—sleek, modern, but some old folks (atok’s Node.js projects) might still prefer the old way.
-c) CommonJS vs. ES Modules: Quick Comparison
-Thing
-CommonJS
-ES Modules
-Borrow
-require
-import
-Share
-module.exports
-export
-Loading
-Synchronous (wait lah)
-Asynchronous (multitasking sikit)
-Where it works
-Mostly Node.js
-Browsers + Node.js
-File extension
-.js
-.mjs or .js with "type": "module"
-Kampung vibe
-Atok’s old-school sharing
-New kampung with WhatsApp group chats
-d) Which One to Use?
+```
+**Kampung vibe:** It’s like a new surau with air-con—sleek, modern, but some old folks (atok’s Node.js projects) might still prefer the old way.
+
+**c) CommonJS vs. ES Modules: Quick Comparison**
+| Thing          | CommonJS                  | ES Modules                            |
+| -------------- |:-------------------------:|:-------------------------------------:|
+| Borrow         | require                   | import                                |
+| Share          | module.exports            | export                                |
+| Loading        | Synchronous (wait lah)    | Asynchronous (multitasking sikit)     |
+| Where it works | Mostly Node.js            | Browsers + Node.js                    |
+| File extension | .js                       | .mjs or .js with "type": "module"     |
+| Kampung vibe   | Atok’s old-school sharing | New kampung with WhatsApp group chats |
+
+**d) Which One to Use?**
 CommonJS: If you’re working on an older Node.js project or just want something simple that works without extra setup, use this. It’s like sticking to nasi lemak for breakfast.
 ES Modules: If you’re building a web app, using modern JavaScript, or want to future-proof your code, go for ESM. It’s like upgrading to nasi lemak with a side of avocado toast.
 In Node.js, you can mix them, but it’s a bit lah—ESM can import CommonJS modules, but CommonJS susah sikit can’t import ESM directly.
