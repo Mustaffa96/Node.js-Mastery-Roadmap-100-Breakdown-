@@ -82,13 +82,15 @@ async function getKampungFile() {
 getKampungFile();
 ```
 
-* **How it works:
-* **`async`: You mark a function as async, meaning it will return a promise.
-* **`await`: You use await to pause until the promise resolves (like waiting for the roti to arrive via the app). It only works inside async functions.
-* **Error handling: Wrap await in a try/catch block to catch errors, like if the app crashes or the uncle forgets your order.
-Kampung vibe: It’s like using an app to order food—everything feels smooth and simple, but behind the scenes, the app is still handling the queue (promises).
+* **How it works:**
+* **`async`:** You mark a function as async, meaning it will return a promise.
+* **`await`:** You use await to pause until the promise resolves (like waiting for the roti to arrive via the app). It only works inside async functions.
+* **Error handling:** Wrap await in a try/catch block to catch errors, like if the app crashes or the uncle forgets your order.
+**Kampung vibe:** It’s like using an app to order food—everything feels smooth and simple, but behind the scenes, the app is still handling the queue (promises).
+
 You can also mix and match:
-javascript
+
+```javascript
 async function orderEverything() {
   try {
     const roti = await makeRoti();
@@ -98,10 +100,14 @@ async function orderEverything() {
     console.log('Aiyo, order failed: ', error);
   }
 }
+```
+
 ### 4. Error Handling: Don’t Let the Roti Burn
 In the kampung, if the uncle burns the roti, you don’t just eat it—you tell him, “Oi, this tak boleh lah!” Error handling in Node.js is the same—you need to catch problems so your program doesn’t crash.
-Callbacks: Check for errors in the callback. Node.js usually passes an error as the first argument:
-javascript
+
+* **Callbacks:** Check for errors in the callback. Node.js usually passes an error as the first argument:
+
+```javascript
 fs.readFile('kampung.txt', 'utf8', (error, data) => {
   if (error) {
     console.log('Adoi, file takde lah: ', error);
@@ -109,8 +115,11 @@ fs.readFile('kampung.txt', 'utf8', (error, data) => {
   }
   console.log('File siap: ', data);
 });
-Promises: Use .catch() or wrap in try/catch if using async/await:
-javascript
+```
+
+* **Promises:** Use .catch() or wrap in try/catch if using async/await:
+
+```javascript
 // Promises with .catch
 fs.readFile('kampung.txt', 'utf8')
   .then(data => console.log('File siap: ', data))
@@ -125,14 +134,20 @@ async function readFile() {
     console.log('Aiyo, error: ', error);
   }
 }
-Kampung vibe: It’s like checking your roti before eating. If it’s burnt, you tell the uncle to make a new one. If you don’t check (ignore errors), you might choke on bad roti—or crash your program.
-Pro tip: Always handle errors, or your app might crash like a motorbike with no petrol in the middle of the kampung.
-Why This Matters in the Kampung (and Node.js)?
+```
+
+* **Kampung vibe:** It’s like checking your roti before eating. If it’s burnt, you tell the uncle to make a new one. If you don’t check (ignore errors), you might choke on bad roti—or crash your program.
+
+**Pro tip:** Always handle errors, or your app might crash like a motorbike with no petrol in the middle of the kampung.
+
+### Why This Matters in the Kampung (and Node.js)?
 In a kampung, you don’t want to wait forever for one task (like waiting for the uncle to finish one roti before taking new orders). Node.js’s async nature lets you handle many tasks at once—reading files, making API calls, serving users—all without slowing down. Callbacks, promises, and async/await are just different ways to manage the chaos of waiting for tasks to finish.
-Callbacks: Good for simple stuff but can get messy, like shouting orders in a crowded mamak stall.
-Promises: Cleaner, Lillington, like a proper queue system.
-Async/await: Super smooth, like ordering via an app—modern and easy.
-Error handling: Always check for burnt roti, or your app will crash.
-Final Kampung Wisdom
+* **Callbacks: Good for simple stuff but can get messy, like shouting orders in a crowded mamak stall.
+* **Promises: Cleaner, Lillington, like a proper queue system.
+* **Async/await: Super smooth, like ordering via an app—modern and easy.
+* **Error handling: Always check for burnt roti, or your app will crash.
+
+### Final Kampung Wisdom
+
 Start with async/await for new projects—it’s the easiest to read and manage, like using a food delivery app. Use promises when you need to chain tasks, and save callbacks for old-school Node.js code or quick scripts. Always handle errors, or you’ll be crying in the kampung when your app crashes.
 
