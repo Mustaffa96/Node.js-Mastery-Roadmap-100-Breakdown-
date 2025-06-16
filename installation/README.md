@@ -6,7 +6,7 @@ Node.js is like the foundation of your coding rumah. Without it, your JavaScript
 
 * **Step 1: Check Your OS, Lah**
 
-Whether you’re on Windows, macOS, or Linux, Node.js got you covered. It’s like picking the right kain for your baju – one size fits all, but you gotta download the right one.
+  Whether you’re on Windows, macOS, or Linux, Node.js got you covered. It’s like picking the right kain for your baju – one size fits all, but you gotta download the right one.
 
 * **Step 2: Download Node.js**
 
