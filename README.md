@@ -10,11 +10,11 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
   * JavaScript essentials: variables, data types, functions, closures, prototypes, this, async/await, promises, and ES6+ features (arrow functions, destructuring, modules). [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/blob/main/essentials/README.md)
   * Node.js basics: what is Node.js, event-driven architecture, single-threaded non-blocking I/O model. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/blob/main/basic_nodejs/README.md)
   * Installing Node.js, using npm/yarn/pnpm, and running basic scripts. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/blob/main/installation/README.md)
-  * REPL, modules (require, module.exports), and CommonJS vs. ES Modules.
+  * REPL, modules (require, module.exports), and CommonJS vs. ES Modules. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/blob/main/module/README.md)
 
 * Milestones:
   * Write simple scripts (e.g., file I/O, basic HTTP server using http).
-  * Understand package.json and install dependencies.
+  * Understand `package.json` and install dependencies.
   * Debug basic code using console.log or Node’s built-in debugger.
 
 **Why 10%?**: JavaScript is the backbone of Node.js. Without a strong grasp of JS, you’ll struggle with Node’s asynchronous nature and ecosystem. This foundational layer is critical but only the starting point.
