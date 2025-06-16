@@ -25,7 +25,7 @@ Node.js is like the foundation of your coding rumah. Without it, your JavaScript
   ```bash
 node -v
 npm -v
-```
+  ```
   
   If you see version numbers (e.g., v20.17.0 for Node, 10.8.2 for npm), you’re golden, bro! If not, something’s wrong – maybe reinstall or holler for help.
 
