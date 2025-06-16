@@ -15,8 +15,8 @@ Node.js is like the foundation of your coding rumah. Without it, your JavaScript
    * **LTS (Long-Term Support):** This one’s stable, macam your mak’s nasi lemak recipe. Pick this for most projects.
   
    * **Current:** This is the cutting-edge version, like trying your cousin’s experimental rendang. Fun, but maybe buggy.
-
-Click the big green button for LTS, download the installer, and run it. It’s like hammering nails into your kampung house – just follow the wizard, click “Next” sampai selesai.
+  
+  Click the big green button for LTS, download the installer, and run it. It’s like hammering nails into your kampung house – just follow the wizard, click “Next” sampai selesai.
 
   * **Step 3: Verify Installation**
 
