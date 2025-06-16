@@ -149,5 +149,5 @@ In a kampung, you don’t want to wait forever for one task (like waiting for th
 
 ### Final Kampung Wisdom
 
-Start with async/await for new projects—it’s the easiest to read and manage, like using a food delivery app. Use promises when you need to chain tasks, and save callbacks for old-school Node.js code or quick scripts. Always handle errors, or you’ll be crying in the kampung when your app crashes.
+Start with **async/await** for new projects—it’s the easiest to read and manage, like using a food delivery app. Use **promises** when you need to chain tasks, and save **callbacks** for old-school Node.js code or quick scripts. Always handle errors, or you’ll be crying in the kampung when your app crashes.
 
