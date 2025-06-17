@@ -80,6 +80,7 @@ Create an npm account if you don't have one: `https://www.npmjs.com/signup`
 * Login to npm in your terminal:
 ```bash
 npm login
+```
 Make sure the package name is unique (you might need to change it in package.json)
 * Publish the package:
 ```bash
