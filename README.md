@@ -32,7 +32,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
 
 * Milestones:
   * Build a basic REST API with Express (GET, POST, PUT, DELETE endpoints). [Click HERE](https://github.com/Mustaffa96/NodeJS-milestone-2.1)
-  * Work with file system operations (e.g., read/write files asynchronously).
+  * Work with file system operations (e.g., read/write files asynchronously). [Click HERE](https://github.com/Mustaffa96/NodeJS-milestone-2.2)
   * Handle streams for large data (e.g., streaming a file download).
   * Publish a simple npm package.
 
