@@ -40,7 +40,7 @@ module.exports = {
     uniqueArray
 };
 ```
-Finally, let's create a README.md file:
+Finally, let's create a `README.md` file:
 
 
 
