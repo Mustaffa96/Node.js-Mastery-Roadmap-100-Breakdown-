@@ -33,7 +33,7 @@ app.listen(port, () => {
 # 2. Routing (Jalan ke *kedai*)
 Routing is like telling customers which aisle in your *kedai* has what they want. In Express, routes define how your server responds to different URLs and HTTP methods (GET, POST, etc.).
 Here’s an example:
-``javascript
+```javascript
 // Home page (like the front counter)
 app.get('/', (req, res) => {
   res.send('Selamat datang ke *kedai* kami!'); // Send a welcome message
