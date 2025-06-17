@@ -80,34 +80,40 @@ npm install <package-name>@<version>
 Example: `npm install express@4.17.1`
 
 **npm Registry**
-The default registry is https://registry.npmjs.org/, but private registries (e.g., GitHub Packages, Verdaccio) can be used.
-Scoped packages (e.g., @nestjs/core) are often used for organization-specific packages.
-2. Semantic Versioning (SemVer)
-npm uses Semantic Versioning to manage package versions in a standardized way. A version number follows the format: MAJOR.MINOR.PATCH (e.g., 2.3.1).
-SemVer Breakdown
-MAJOR: Incremented for breaking changes (e.g., 2.0.0 to 3.0.0).
-MINOR: Incremented for new features that are backward-compatible (e.g., 2.3.0 to 2.4.0).
-PATCH: Incremented for backward-compatible bug fixes (e.g., 2.3.1 to 2.3.2).
-Version Specifiers in package.json
-Exact Version: Locks to a specific version (e.g., "express": "4.18.2").
-Caret (^): Allows updates to minor and patch versions (e.g., "^4.18.2" allows 4.x.x but not 5.0.0).
-Tilde (~): Allows updates to patch versions only (e.g., "~4.18.2" allows 4.18.x but not 4.19.0).
-Latest: Uses the latest version (e.g., "express": "latest"), though not recommended for production.
-Why SemVer Matters
-Ensures predictable updates and prevents breaking changes from automatically affecting your project.
-The package-lock.json file ensures exact versions are installed, avoiding unexpected updates.
-3. Scripts
-The scripts section in package.json allows you to define custom commands to automate tasks (e.g., starting a server, running tests, or building a project).
-Key Features
-Scripts are executed using:
-bash
+* The default registry is https://registry.npmjs.org/, but private registries (e.g., GitHub Packages, Verdaccio) can be used.
+* Scoped packages (e.g., @nestjs/core) are often used for organization-specific packages.
+
+# 2. Semantic Versioning (SemVer)
+npm uses **Semantic Versioning** to manage package versions in a standardized way. A version number follows the format: `MAJOR.MINOR.PATCH` (e.g., `2.3.1`).
+**SemVer Breakdown**
+* **MAJOR:** Incremented for breaking changes (e.g., 2.0.0 to 3.0.0).
+* **MINOR:** Incremented for new features that are backward-compatible (e.g., 2.3.0 to 2.4.0).
+* **PATCH:** Incremented for backward-compatible bug fixes (e.g., 2.3.1 to 2.3.2).
+
+**Version Specifiers in package.json**
+* **Exact Version:** Locks to a specific version (e.g., `"express": "4.18.2"`).
+* **Caret (^):** Allows updates to minor and patch versions (e.g., `"^4.18.2"` allows `4.x.x` but not `5.0.0`).
+* **Tilde (~):** Allows updates to patch versions only (e.g., `"~4.18.2"` allows `4.18.x` but not `4.19.0`).
+* **Latest:** Uses the latest version (e.g., `"express": "latest"`), though not recommended for production.
+
+**Why SemVer Matters**
+* Ensures predictable updates and prevents breaking changes from automatically affecting your project.
+* The `package-lock.json` file ensures exact versions are installed, avoiding unexpected updates.
+
+# 3. Scripts
+The `scripts` section in package.json allows you to define custom commands to automate tasks (e.g., starting a server, running tests, or building a project).
+**Key Features**
+* Scripts are executed using:
+```bash
 npm run <script-name>
-Some scripts have shortcuts:
-npm start runs the start script.
-npm test runs the test script.
-Scripts can chain commands or run Node.js files, CLIs, or shell commands.
-Example package.json with Scripts
-json
+```
+* Some scripts have shortcuts:
+`npm start` runs the `start` script.
+`npm test` runs the `test` script.
+* Scripts can chain commands or run Node.js files, CLIs, or shell commands.
+
+**Example package.json with Scripts**
+```json
 {
   "name": "my-project",
   "version": "1.0.0",
@@ -128,27 +134,32 @@ json
     "webpack": "^5.75.0"
   }
 }
-Common Scripts
-start: Runs the main application (e.g., node index.js).
-dev: Runs a development server, often with tools like nodemon for auto-reloading.
-test: Runs tests using frameworks like Jest or Mocha.
-build: Compiles or bundles code (e.g., using Webpack or Babel).
-lint: Runs a linter to check code quality (e.g., ESLint).
-Custom Scripts
+```
+**Common Scripts**
+`start`: Runs the main application (e.g., node index.js).
+`dev`: Runs a development server, often with tools like nodemon for auto-reloading.
+`test`: Runs tests using frameworks like Jest or Mocha.
+`build`: Compiles or bundles code (e.g., using Webpack or Babel).
+`lint`: Runs a linter to check code quality (e.g., ESLint).
+
+**Custom Scripts**
 You can define any script name and chain multiple commands:
-json
+```json
 "scripts": {
   "deploy": "npm run build && npm run start"
 }
-Run with: npm run deploy.
-Additional Notes
-npm vs. Yarn/pnpm: npm is the default package manager for Node.js, but alternatives like Yarn and pnpm offer faster installs and different features. They all use the npm registry by default.
-Security: Use npm audit to check for vulnerabilities in dependencies and npm audit fix to resolve them.
-Workspaces: For monorepos, npm supports workspaces to manage multiple packages in a single repository.
-Private Packages: Organizations can host private packages on the npm registry or private registries, requiring authentication.
-Summary
+```
+Run with: `npm run deploy`.
+
+**Additional Notes**
+* **npm vs. Yarn/pnpm:** npm is the default package manager for Node.js, but alternatives like Yarn and pnpm offer faster installs and different features. They all use the npm registry by default.
+* **Security:** Use npm audit to check for vulnerabilities in dependencies and npm audit fix to resolve them.
+* **Workspaces:** For monorepos, npm supports workspaces to manage multiple packages in a single repository.
+* **Private Packages:** Organizations can host private packages on the npm registry or private registries, requiring authentication.
+
+### Summary
 The npm ecosystem streamlines JavaScript development by:
-Installing/Managing Packages: Simplifies dependency management with package.json, node_modules, and the npm CLI.
-Semantic Versioning: Ensures predictable versioning with MAJOR.MINOR.PATCH and specifiers like ^ or ~.
-Scripts: Automates tasks like starting, testing, or building projects via the scripts section in package.json.
-If you need a deeper dive into any aspect (e.g., creating a package, publishing to npm, or using workspaces), let me know!
+* **Installing/Managing Packages:** Simplifies dependency management with `package.json`, `node_modules`, and the npm CLI.
+* **Semantic Versioning:** Ensures predictable versioning with `MAJOR.MINOR.PATCH` and specifiers like `^` or `~`.
+* **Scripts:** Automates tasks like starting, testing, or building projects via the `scripts` section in `package.json`.
+
