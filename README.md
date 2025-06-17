@@ -31,7 +31,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
   * Basic Express.js: setting up a server, routing, middleware, handling requests/responses. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/express-js)
 
 * Milestones:
-  * Build a basic REST API with Express (GET, POST, PUT, DELETE endpoints).
+  * Build a basic REST API with Express (GET, POST, PUT, DELETE endpoints). [CLick HERE] (https://github.com/Mustaffa96/NodeJS-milestone-2.1)
   * Work with file system operations (e.g., read/write files asynchronously).
   * Handle streams for large data (e.g., streaming a file download).
   * Publish a simple npm package.
