@@ -60,7 +60,7 @@ app.use(catatOrder);
 ### In Kampung Terms:
 * If something goes wrong (like a customer asks for food you don’t have), this middleware handles the mess. It catches errors and sends a polite response, like “Maaf lah, stok habis, cuba esok ya.”
 * Without this, your app might crash or show a scary error message to users.
-**How it works in Express:**
+### How it works in Express:
 * Error-handling middleware has four parameters: `(err, req, res, next)`.
 * It catches errors from previous middleware or routes and sends a user-friendly response.
 **Example:**
@@ -75,10 +75,10 @@ app.use(handleSambalTumpah);
 
 # 4. CORS Middleware – "Orang Kampung Sebelah Boleh Beli Ke?"
 **What it does:** CORS (Cross-Origin Resource Sharing) is like deciding if people from the next kampung can buy your nasi lemak or access your warung’s menu.
-**In Kampung Terms:**
+### In Kampung Terms:
 * Your warung is in Kampung A, but someone from Kampung B wants to order online. By default, your warung says “Tak boleh, orang luar!” CORS middleware is like giving permission for Kampung B folks to access your stuff.
 * It controls which websites (origins) can talk to your server.
-**How it works in Express:**
+### How it works in Express:
 * You use the cors package to set rules about who can access your API.
 * For example, you can allow everyone, specific domains, or restrict certain actions (GET, POST, etc.).
 **Example:**
