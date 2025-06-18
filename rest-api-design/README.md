@@ -48,7 +48,7 @@ app.get('/v2/kuih', (req, res) => {
   res.status(200).json({ kuih: ["kuih lapis", "kuih talam"], unit: "by piece" });
 });
 ```
-* **Kampung Tip:** Use /v1/ for your first version. If you change how the API works (e.g., different data format), make a /v2/. Keep old versions running for a while so customers (apps) can switch slowly. You can also version via headers, but URL versioning (/v1/) is simpler, like a clear signboard at your *kedai*.
+* **Kampung Tip:** Use `/v1/` for your first version. If you change how the API works (e.g., different data format), make a /v2/. Keep old versions running for a while so customers (apps) can switch slowly. You can also version via headers, but URL versioning (/v1/) is simpler, like a clear signboard at your *kedai*.
 
 # 4. Pagination (Serving Kuih in Small Batches)
 If your *kampung* marketplace has 1,000 types of kuih, you can’t give the customer the whole list at once – it’s too much, like piling 1,000 *kuih* on their plate! **Pagination** is like serving *kuih* in small, manageable batches (e.g., 10 at a time).
@@ -116,10 +116,10 @@ app.post('/kuih', (req, res) => {
 
 ### Putting It All Together (The Kampung Marketplace API)
 Imagine your *kampung* marketplace API in action:
-* **Status Codes:** When someone asks for /v1/kuih/123, you return 404 if that kuih doesn’t exist, or 200 with the kuih details if it does.
-* **Versioning:** Your app uses /v1/kuih for now. If you change how prices are calculated later, you create /v2/kuih but keep /v1/ running.
-* **Pagination:** For a big list like /v1/kuih?page=3&limit=20, you send 20 kuih starting from the 41st item, with a response like { page: 3, limit: 20, total: 100, data: [...] }.
-* **Validation:** When someone posts to /v1/kuih to add a new kuih, you check if name and price are valid. If not, you send 400 with a message like “Harga kena lebih dari 0!”
+* **Status Codes:** When someone asks for `/v1/kuih/123`, you return `404` if that kuih doesn’t exist, or `200` with the kuih details if it does.
+* **Versioning:** Your app uses `/v1/kuih` for now. If you change how prices are calculated later, you create `/v2/kuih` but keep `/v1/` running.
+* **Pagination:** For a big list like `/v1/kuih?page=3&limit=20`,  you send 20 kuih starting from the 41st item, with a response like `{ page: 3, limit: 20, total: 100, data: [...] }`.
+* **Validation:** When someone posts to `/v1/kuih` to add a new kuih, you check if `name` and `price` are valid. If not, you send `400` with a message like “Harga kena lebih dari 0!”
 
 Here’s a full Express example combining everything:
 ```javascript
