@@ -6,24 +6,26 @@ Think of a REST API as a *kedai* runcit (small village shop). Customers (clients
 * **Express** is like the friendly shopkeeper who handles requests quickly and keeps things tidy.
 
 # 2. Proper Status Codes (The Kampung Way of Replying)
-When someone comes to your *kedai* (API), you need to reply clearly so they know what’s going on. In REST APIs, we use HTTP status codes to say whether things went well or not. It’s like how you’d respond if someone asks for nasi lemak at your stall.
+When someone comes to your *kedai* (API), you need to reply clearly so they know what’s going on. 
+In REST APIs, we use HTTP status codes to say whether things went well or not. It’s like how you’d respond if someone asks for nasi lemak at your stall.
 
 Here’s how it works in *kampung* terms:
 * **200 OK:** “Here’s your nasi lemak, all good!”
 The request worked, and you’re sending back the data (e.g., a list of products).
-Example: `res.status(200).json({ message: "Here's your kuih list", data: kuihList })`
+*Example:* `res.status(200).json({ message: "Here's your kuih list", data: kuihList })`
 * **201 Created:** “Your order for kuih lapis is added to the menu!”
 Used when something new is created, like a new user signing up.
-`Example: res.status(201).json({ message: "New user created", user: newUser })`
+*Example:* `res.status(201).json({ message: "New user created", user: newUser })`
 * **400 Bad Request:** “Eh, what’s this? You didn’t tell me what kuih you want!”
 The customer’s request is wrong or incomplete (e.g., missing required fields like email).
-Example: `res.status(400).json({ error: "Email is required" })`
+*Example:* `res.status(400).json({ error: "Email is required" })`
 * **404 Not Found:** “Sorry, no ikan bilis in stock today!”
 The thing they’re asking for doesn’t exist (e.g., a product ID that’s not in the database).
-Example: `res.status(404).json({ error: "Product not found" })`
+*Example:* `res.status(404).json({ error: "Product not found" })`
 * **500 Internal Server Error** “Adoi, the stove broke, cannot cook now!”
 Something went wrong on your server’s side (e.g., database crashed).
-Example: `res.status(500).json({ error: "Something broke, try again later" })`
+*Example:* `res.status(500).json({ error: "Something broke, try again later" })`
+
 **Kampung Tip:** Always send a clear message with the status code, like { error: "Cannot find that kuih" }, so the customer knows what’s wrong. In Express, you’d set this with res.status(code).json(response).
 
 # 3. Versioning (Keeping Your Kedai Menu Fresh)
