@@ -175,7 +175,7 @@ app.listen(3000, () => console.log("Kedai API ready at port 3000!"));
 ```
 
 ### Final Kampung Advice
-* **Status Codes: Be clear, like telling a customer exactly why their *kuih* order failed.
+* **Status Codes:** Be clear, like telling a customer exactly why their *kuih* order failed.
 * **Versioning:** Keep old and new menus separate so nobody gets confused.
 * **Pagination:** Serve data in small, neat portions, like packing *kuih* in small boxes.
 * **Validation:** Check orders carefully to avoid serving bad *kuih* or crashing your *kedai*.
