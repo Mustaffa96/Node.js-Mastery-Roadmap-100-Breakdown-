@@ -46,7 +46,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
   * Express middleware: authentication, logging, error handling, CORS. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/express-middleware)
   * Database integration: MongoDB (NoSQL) or PostgreSQL/MySQL (SQL) with ORMs like Mongoose or Sequelize. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/database-integration)
   * Environment variables and configuration management (e.g., dotenv). [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/dotenv)
-  * REST API design: proper status codes, versioning, pagination, validation.
+  * REST API design: proper status codes, versioning, pagination, validation. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/rest-api-design)
   * Testing basics: unit tests with Jest or Mocha, mocking, and API testing.
 
 * Milestones:
