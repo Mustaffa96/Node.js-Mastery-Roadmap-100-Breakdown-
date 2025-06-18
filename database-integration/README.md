@@ -8,7 +8,7 @@ There are two main types of databases we’ll talk about:
 * **MongoDB (NoSQL):** Like a big, flexible notebook where you can scribble customer info however you want, no strict rules.
 * **PostgreSQL/MySQL (SQL):** Like a neat, organized table in your buku besar where every customer’s info has to fit in specific columns (name, phone, purchase, etc.).
 
-Node.js connects to these databases to store and fetch data, and tools like **Mongoose** (for MongoDB) and **Sequelize** (for PostgreSQL/MySQL) are like helpful *adik** assistants who make the work easier by organizing and translating your instructions.
+Node.js connects to these databases to store and fetch data, and tools like **Mongoose** (for MongoDB) and **Sequelize** (for PostgreSQL/MySQL) are like helpful *adik* assistants who make the work easier by organizing and translating your instructions.
 
 # MongoDB (NoSQL) Integration: The Flexible Notebook
 MongoDB is a NoSQL database, meaning it’s chill and doesn’t force you to follow a strict structure. It’s like a notebook where you can write customer details in any format:
@@ -49,8 +49,8 @@ No need to define columns upfront—MongoDB is flexible like that.
 const customers = await db.collection('customers').find({ purchase: '10 roti' }).toArray();
 console.log(customers);
 ```
-### Mongoose: The Helpful *adik**
-Mongoose is like an *adik** who organizes your MongoDB notebook for you. It’s an *ORM* (Object-Relational Mapping, but let’s call it Object-to-Notebook Mapping). It gives structure to your data and makes coding easier.
+### Mongoose: The Helpful *adik*
+Mongoose is like an *adik* who organizes your MongoDB notebook for you. It’s an *ORM* (Object-Relational Mapping, but let’s call it Object-to-Notebook Mapping). It gives structure to your data and makes coding easier.
 * **Why Use Mongoose?**
   * It lets you define a **schema** (like a template for how customer data should look).
   * It simplifies queries and handles validation (e.g., “phone number must be a number, lah!").
@@ -71,7 +71,7 @@ const customerSchema = new mongoose.Schema({
 });
 const Customer = mongoose.model('Customer', customerSchema);
 ```
-This is like telling your *adik** to only write customer info in a certain format.
+This is like telling your *adik* to only write customer info in a certain format.
   * Add a customer:
 ```javascript
 const ali = new Customer({
@@ -86,7 +86,7 @@ await ali.save();
 const customers = await Customer.find({ purchase: '10 roti' });
 console.log(customers);
 ```
-Mongoose makes it easier to manage data, like having a smart *adik** who checks your spelling and keeps the notebook tidy.
+Mongoose makes it easier to manage data, like having a smart *adik* who checks your spelling and keeps the notebook tidy.
 
 # PostgreSQL/MySQL (SQL) Integration: The Organized Table
 PostgreSQL and MySQL are SQL databases, like a proper buku besar with neat tables. Each table has fixed columns, like “Name,” “Purchase,” “Price,” and “Phone.” Every customer’s info must fit into these columns, no exceptions. This is great if your *kedai* has strict rules about how data should look.
@@ -134,13 +134,13 @@ console.log(result.rows);
 ```
 SQL databases are strict but powerful, like a buku besar with ruled lines that keeps everything organized.
 
-### Sequelize: The Organized **adik***
+### Sequelize: The Organized **adik**
 Sequelize is like Mongoose but for SQL databases. It’s an ORM that makes it easier to work with PostgreSQL or MySQL by letting you use JavaScript instead of writing raw SQL queries.
 
 * **Why Use Sequelize?**
   * It lets you define models (like templates for tables).
   * It handles queries and relationships (e.g., linking customers to their orders).
-  * It’s like an *adik** who translates your JavaScript into SQL commands.
+  * It’s like an *adik* who translates your JavaScript into SQL commands.
 
 * **Example with Sequelize:**
 Install Sequelize and the driver:
@@ -187,6 +187,6 @@ Sequelize makes SQL feel less like a strict buku besar and more like writing in 
 
 ### Kampung Summary
 * Node.js is the `pakcik` running the *kedai*, talking to the database to store and fetch info.
-* MongoDB is a flexible notebook (NoSQL) where you can write however you like, and Mongoose is the *adik** who keeps it tidy.
+* MongoDB is a flexible notebook (NoSQL) where you can write however you like, and Mongoose is the *adik* who keeps it tidy.
 * PostgreSQL/MySQL is a strict buku besar (SQL) with neat tables, and Sequelize is the *adik* who translates your instructions into table language.
 * Choose MongoDB for flexibility, PostgreSQL/MySQL for structure. Both work great with Node.js, and ORMs like Mongoose or Sequelize make life easier, like having a smart helper in your *kedai*.
