@@ -53,7 +53,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
   * Build a full CRUD API with Express and a database. [For MongoDB](https://github.com/Mustaffa96/NodeJS-milestone-3.1-MongoDB-)   [For SQL](https://github.com/Mustaffa96/NodeJS-milestone-3.1-SQL-)
   * Implement user authentication (JWT or OAuth2). [JWT-Recommended](https://github.com/Mustaffa96/NodeJS-milestone-3.2-JWT-) [OAuth](https://github.com/Mustaffa96/NodeJS-milestone-3.2-OAuth2-)
   * Write basic tests for API endpoints. [Click HERE](https://github.com/Mustaffa96/NodeJS-milestone-3.3)
-  * Deploy a simple app to a platform like Heroku, Vercel, or AWS. [Heroku](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/heroku) [Vercel]() [AWS]()
+  * Deploy a simple app to a platform like Heroku, Vercel, or AWS. [Heroku](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/heroku) [Vercel](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/vercel) [AWS](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/aws)
    
 **Why 15%?:** This phase focuses on practical application development, integrating databases, and understanding deployment. It’s where you start building portfolio-worthy projects but not yet at scale.
 
