@@ -51,7 +51,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
 
 * Milestones:
   * Build a full CRUD API with Express and a database. [For MongoDB](https://github.com/Mustaffa96/NodeJS-milestone-3.1-MongoDB-)   [For SQL](https://github.com/Mustaffa96/NodeJS-milestone-3.1-SQL-)
-  * Implement user authentication (JWT or OAuth2).
+  * Implement user authentication (JWT or OAuth2). [JWT-Recommended](https://github.com/Mustaffa96/NodeJS-milestone-3.2-JWT-) [OAuth](https://github.com/Mustaffa96/NodeJS-milestone-3.2-OAuth2-)
   * Write basic tests for API endpoints.
   * Deploy a simple app to a platform like Heroku, Vercel, or AWS.
    
