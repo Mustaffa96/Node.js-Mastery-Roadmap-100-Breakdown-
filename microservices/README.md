@@ -56,16 +56,16 @@ app.post('/process-payment', (req, res) => {
 
 app.listen(3002, () => console.log('Payment Service running on port 3002'));
 ```
-  * The Order Service calls this API using a library like axios:
+  * The Order Service calls this API using a library like `axios`:
 ```javascript
 const axios = require('axios');
 axios.post('http://payment-service:3002/process-payment', { orderId: 123, amount: 50 })
   .then(response => console.log(response.data));
 ```
 * **Message Queues (Passing Notes):**
-  * Sometimes, stalls don’t need to talk directly. Instead, they pass notes through a “middleman” like a message queue (e.g., RabbitMQ or Kafka).
+  * Sometimes, stalls don’t need to talk directly. Instead, they pass notes through a “middleman” like a message queue (e.g., **RabbitMQ** or **Kafka**).
   * For example, the Order Service puts a “new order” note in the queue, and the Payment Service picks it up when ready.
-  * In Node.js, you’d use a library like amqplib for RabbitMQ:
+  * In Node.js, you’d use a library like `amqplib` for RabbitMQ:
 ```javascript
 // Order Service sends message
 const amqp = require('amqplib');
