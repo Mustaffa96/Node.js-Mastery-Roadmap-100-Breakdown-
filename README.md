@@ -147,7 +147,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
 
 **Docs:** Node.js official docs, Express docs, MDN for JavaScript.
 
-**Courses:** Udemy (e.g., Stephen Grider, Maximilian Schwarzmüller), Node.js official YouTube.
+**Courses:** Udemy (e.g., [Stephen Grider](https://www.udemy.com/course/advanced-node-for-developers/), [Maximilian Schwarzmüller](https://www.udemy.com/course/nodejs-the-complete-guide/)), Node.js official YouTube.
 
 **Communities:** Node.js Slack, X (#NodeJS), Stack Overflow.
 
