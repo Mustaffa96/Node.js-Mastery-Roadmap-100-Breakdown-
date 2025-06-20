@@ -1,4 +1,4 @@
-Alright, let’s break down Microservices using Node.js in `kampung` (village) terms, making it simple and relatable, like chatting over a cup of teh tarik at the warung. I’ll explain what microservices are, how they break down monolithic apps, and how inter-service communication works, all in a straightforward way.
+Alright, let’s break down Microservices using Node.js in *kampung* (village) terms, making it simple and relatable, like chatting over a cup of teh tarik at the warung. I’ll explain what microservices are, how they break down monolithic apps, and how inter-service communication works, all in a straightforward way.
 
 # What Are Microservices? (The Kampung Analogy)
 Imagine you’re running a big, busy `kedai makan` (food stall) all by yourself. You cook the nasi goreng, serve drinks, take orders, clean tables, and handle payments. This is a monolithic app—one giant system where everything is tightly connected. If one thing goes wrong (say, the stove breaks), the whole kedai shuts down. Plus, it’s hard to add new dishes or hire help because everything depends on you.
@@ -36,7 +36,7 @@ A **monolithic app** is like that one big `kedai makan`:
 In Node.js, you’d use tools like **Express.js** to build these small services, with each having its own REST API (e.g., `/users`, `/products`) to handle requests.
 
 # Inter-Service Communication (How Stalls Talk to Each Other)
-In the `kampung`, each stall needs to work together to serve customers. For example, the order stall needs to tell the nasi goreng stall what to cook, and the payment stall needs to confirm the bill is paid. This is **inter-service communication** in microservices.
+In the *kampung*, each stall needs to work together to serve customers. For example, the order stall needs to tell the nasi goreng stall what to cook, and the payment stall needs to confirm the bill is paid. This is **inter-service communication** in microservices.
 
 Here’s how it works in simple terms:
 * **REST APIs (Shouting Orders Across Stalls):**
@@ -78,7 +78,7 @@ async function sendOrder() {
 ```
 The Payment Service listens for these messages and processes them.
 * **Service Discovery (Finding the Right Stall):**
-  * In a big `kampung`, stalls need to know where to find each other. Tools like **Consul** or **Kubernetes** help services discover each other’s addresses (e.g., `payment-service:3002`).
+  * In a big *kampung*, stalls need to know where to find each other. Tools like **Consul** or **Kubernetes** help services discover each other’s addresses (e.g., `payment-service:3002`).
   * In Node.js, you might use environment variables or a service registry to store these addresses.
 * **Event-Driven Communication (Announcing News):**
   * Sometimes, a stall shouts out an update, and anyone interested listens. For example, when the Payment Service finishes, it announces “Payment Done!” and the Order Service updates the order status.
@@ -90,10 +90,10 @@ const publisher = redis.createClient();
 publisher.publish('payment-channel', JSON.stringify({ orderId: 123, status: 'paid' }));
 ```
 ### Why Use Node.js for Microservices?
-Node.js is like a fast, lightweight worker in the `kampung`:
+Node.js is like a fast, lightweight worker in the *kampung*:
 * **Fast and Async:** Node.js handles many requests at once (like serving multiple customers) thanks to its event-driven nature.
 * **Lightweight:** Each microservice is a small Node.js app, easy to deploy in containers (like Docker).
-* **JavaScript Everywhere:** Use the same language (JavaScript) for both frontend and backend, making it easier for `kampung` coders.
+* **JavaScript Everywhere:** Use the same language (JavaScript) for both frontend and backend, making it easier for *kampung* coders.
 * **Ecosystem:** Libraries like Express, Axios, and AMQP make building APIs and communication simple.
 
 ### Challenges (Kampung Problems)
