@@ -65,7 +65,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
   * Advanced Express: custom middleware, modular routing, error handling strategies. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/adv-express)
   * Microservices basics: breaking down monolithic apps, inter-service communication. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/microservices)
   * Performance optimization: caching (Redis), load balancing, clustering with Node’s cluster module. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/performance-opt)
-  * Security: helmet, rate limiting, input sanitization, preventing XSS/CSRF.
+  * Security: helmet, rate limiting, input sanitization, preventing XSS/CSRF. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/security)
   * Background jobs: queues (Bull, RabbitMQ), cron jobs, task scheduling.
 
 * Milestones:
