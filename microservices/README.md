@@ -1,7 +1,7 @@
 Alright, let’s break down Microservices using Node.js in *kampung* (village) terms, making it simple and relatable, like chatting over a cup of teh tarik at the warung. I’ll explain what microservices are, how they break down monolithic apps, and how inter-service communication works, all in a straightforward way.
 
 # What Are Microservices? (The Kampung Analogy)
-Imagine you’re running a big, busy `kedai makan` (food stall) all by yourself. You cook the nasi goreng, serve drinks, take orders, clean tables, and handle payments. This is a monolithic app—one giant system where everything is tightly connected. If one thing goes wrong (say, the stove breaks), the whole kedai shuts down. Plus, it’s hard to add new dishes or hire help because everything depends on you.
+Imagine you’re running a big, busy *kedai makan* (food stall) all by yourself. You cook the nasi goreng, serve drinks, take orders, clean tables, and handle payments. This is a monolithic app—one giant system where everything is tightly connected. If one thing goes wrong (say, the stove breaks), the whole kedai shuts down. Plus, it’s hard to add new dishes or hire help because everything depends on you.
 Now, picture breaking your kedai into smaller, specialized stalls:
 One stall just makes nasi goreng.
 Another stall only serves drinks.
@@ -11,7 +11,7 @@ Each stall is independent, has its own staff, and focuses on one job. These are 
 In **Node.js**, microservices are small apps (or modules) built using Node’s lightweight, JavaScript-based framework. Each microservice handles a specific function (e.g., user login, product catalog, or payment processing) and runs independently.
 
 # Breaking Down a Monolithic App
-A **monolithic app** is like that one big `kedai makan`:
+A **monolithic app** is like that one big *kedai makan*:
 * Everything (database, user interface, business logic) is in one codebase.
 * If you want to update the menu, you have to change the whole kitchen setup, which is risky and slow.
 * Scaling is tough—if more customers come, you can’t just add one cook; you need to duplicate the entire kedai.
@@ -102,4 +102,4 @@ Node.js is like a fast, lightweight worker in the *kampung*:
 * **More Complexity: Instead of one big kedai, you’re managing many small ones, so you need good monitoring (e.g., Prometheus) and logging.
 
 ### Summary in Kampung Terms
-Microservices in Node.js are like turning one big `kedai makan` into smaller, specialized stalls. Each stall (microservice) does one job, runs its own Node.js app, and talks to others via APIs (shouting orders) or message queues (passing notes). Breaking down a monolithic app makes it easier to update, scale, and fix, but you need to manage how the stalls work together. Node.js is great for this because it’s fast, simple, and works well with JavaScript.
+Microservices in Node.js are like turning one big *kedai makan* into smaller, specialized stalls. Each stall (microservice) does one job, runs its own Node.js app, and talks to others via APIs (shouting orders) or message queues (passing notes). Breaking down a monolithic app makes it easier to update, scale, and fix, but you need to manage how the stalls work together. Node.js is great for this because it’s fast, simple, and works well with JavaScript.
