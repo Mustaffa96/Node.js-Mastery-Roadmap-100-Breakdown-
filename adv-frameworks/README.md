@@ -1,5 +1,6 @@
 Alright, let’s break this down in *kampung* style, like we’re chilling under a coconut tree, sipping teh tarik, and talking about building a super cool digital rumah (house) using Node.js. We’re gonna talk about two fancy alat (tools) — **Fastify** and **NestJS** — that help make your Node.js apps faster, stronger, or better organized, like upgrading from a wooden *kampung* house to a modern rumah batu with Wi-Fi. Let’s go!
-What’s the Big Deal with Advanced Frameworks?
+
+# What’s the Big Deal with Advanced Frameworks?
 Imagine you’re building a *kampung* house (your app) using Node.js, which is like a big toolbox with hammers, nails, and planks. You can build the house with just those basics, but it might take forever, and the house might not be super sturdy or easy to maintain. Frameworks like **Fastify** and **NestJS** are like pre-made blueprints or power tools that make building faster, cleaner, and ready for big *kampung* parties (lots of users).
 * **Fastify** is like a turbo-charged motorbike. It’s all about speed and carrying just what you need to zoom through the *kampung* roads (handle requests super fast).
 * **NestJS** is like a well-planned *kampung* mansion. It’s about structure, organization, and making sure every room (part of your app) is neat and easy to upgrade.
