@@ -81,7 +81,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
 **Goal:** Master advanced patterns, frameworks, and DevOps integration.
 
 * Key Knowledge:
-  * Advanced frameworks: Fastify, NestJS for better performance or structure.
+  * Advanced frameworks: Fastify, NestJS for better performance or structure. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/adv-frameworks)
   * GraphQL: building and consuming GraphQL APIs with Apollo or similar.
   * WebSockets: real-time apps with Socket.IO or ws.
   * DevOps: Docker, CI/CD pipelines, Kubernetes basics for Node.js apps.
