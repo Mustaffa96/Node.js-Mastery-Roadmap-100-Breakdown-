@@ -86,7 +86,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
   * WebSockets: real-time apps with Socket.IO or ws. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/websocket)
   * DevOps: Docker, CI/CD pipelines, Kubernetes basics for Node.js apps. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/devops)
   * Advanced testing: integration tests, end-to-end tests, test coverage. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/adv-testing)
-  * Debugging and monitoring: tools like New Relic, Winston, or PM2 for logging and performance monitoring.
+  * Debugging and monitoring: tools like New Relic, Winston, or PM2 for logging and performance monitoring. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/debug-monitor)
 
 * Milestones:
   * Build a real-time chat app with WebSockets.
