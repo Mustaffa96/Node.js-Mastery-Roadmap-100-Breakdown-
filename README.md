@@ -90,7 +90,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
 
 * Milestones:
   * Build a real-time chat app with WebSockets. [Click HERE](https://github.com/Mustaffa96/NodeJS-milestone-5.1)
-  * Containerize a Node.js app with Docker and deploy to AWS/GCP.
+  * Containerize a Node.js app with Docker and deploy to AWS/GCP. [Click HERE](https://github.com/Mustaffa96/NodeJS-milestone-5.2)
   * Set up a CI/CD pipeline with GitHub Actions or similar.
   * Implement a GraphQL API with subscriptions.
 
