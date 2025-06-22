@@ -67,7 +67,7 @@ View logs with:
 pm2 logs
 ```
 PM2 keeps your app “alive” and you can use its monitoring features (like `pm2 monit`) to see CPU, memory usage. For fancier monitoring, you can connect PM2 to New Relic to get detailed metrics.
-* **Why it’s cool:** PM2 is like a tireless ketua who never sleeps. It’s great for production because it ensures your app stays online even if it terbabas (skids out). It also has a built-in load balancer to handle lots of users, and you can scale your app to multiple cores with pm2 start app.js -i max.
+* **Why it’s cool:** PM2 is like a tireless ketua who never sleeps. It’s great for production because it ensures your app stays online even if it terbabas (skids out). It also has a built-in load balancer to handle lots of users, and you can scale your app to multiple cores with `pm2 start app.js -i max`.
 * **Kampung example:** Your warung app crashes because too many people ordered teh tarik at once. PM2 restarts it automatically, and you check shows high memory usage. You optimize the order function, and PM2’s dashboard confirms everything’s steady again.
 
 # How These Tools Work Together in the Kampung
