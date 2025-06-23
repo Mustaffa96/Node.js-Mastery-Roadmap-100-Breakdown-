@@ -102,7 +102,7 @@ To "pro 100%" Node.js, you need a structured path to master its core concepts, e
 
 * Key Knowledge:
   * Microservices architecture: service orchestration, API gateways, event-driven systems. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/ms-architecture)
-  * Advanced performance: worker threads, V8 engine optimization, memory leak debugging.
+  * Advanced performance: worker threads, V8 engine optimization, memory leak debugging. [Click HERE](https://github.com/Mustaffa96/Node.js-Mastery-Roadmap-100-Breakdown-/tree/main/adv-performance)
   * Distributed systems: handling eventual consistency, CAP theorem, distributed tracing.
   * Open-source contribution: understand Node.js internals, contribute to npm packages or Node.js core.
   * Leadership: code reviews, mentoring, designing system architecture.
